@@ -1,12 +1,14 @@
 # Comandos Terminal, Linea de comandos y VSC
 
-> VSC
+## VSC
+
 
 - Dividir pantalla del codigo = `Command + \`
 - Abrir terminal en VSC = `Control + ` `
 - Limpiar la terminal = `Control + l`
 
-> Definiciones Shell / Bash 
+## Definiciones Shell / Bash 
+
 
 ```
 `Shell` es la ventana que nos permite acceder al `Bash` que no es mas que un lenguaje de programacion que interactua entre el usuario y el sistema.
@@ -17,7 +19,8 @@ Por otro lado podemos destacar que los principales Shell son `zShell` y `BashShe
 siendo de MacOS y sistemas Unix respectivamente
 ```
 
-> Comandos zShell y BashShell
+## Comandos zShell y BashShell
+
 
 - Listar archivos *Forma mas clara* = `ls -lh`
 - Volver al Home = `cd`

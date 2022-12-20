@@ -14,6 +14,7 @@
 `Shell` es la ventana que nos permite acceder al `Bash` que no es mas que un lenguaje de programacion que interactua entre el usuario y el sistema.
 ```
 
+
 ```
 Por otro lado podemos destacar que los principales Shell son `zShell` y `BashShell`
 siendo de MacOS y sistemas Unix respectivamente

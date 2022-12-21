@@ -52,3 +52,10 @@ siendo de MacOS y sistemas Unix respectivamente
 
 [Comandos](https://victorhckinthefreeworld.com/2022/06/30/algunos-trucos-utiles-de-uso-del-paginador-less/)
 
+### Editor de texto vim
+
+[Comandos](https://web.ua.es/cuantica/docencia/CCEM/teoria/node170.html)
+
+* * *
+
+## Estructura de los comandos

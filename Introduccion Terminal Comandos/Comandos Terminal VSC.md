@@ -51,4 +51,3 @@ siendo de MacOS y sistemas Unix respectivamente
 ### Editor de texto Less 
 
 [Comandos](https://victorhckinthefreeworld.com/2022/06/30/algunos-trucos-utiles-de-uso-del-paginador-less/)
-

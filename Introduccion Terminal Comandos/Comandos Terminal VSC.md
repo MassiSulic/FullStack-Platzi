@@ -31,7 +31,11 @@ siendo de MacOS y sistemas Unix respectivamente
 - Descripcion de cualquier archivo = `file`
 - Ver archivos ocultos = `ls -a`
 - Copiar archivos = `cp`
-- Eliminar archivos = `rm`
+- Eliminar archivos = `rm` 
+- Eliminar directorios = `rm -r` *La r indica que es recursivo, es decir va a preguntar archivo x archivo*
 - Mover archivos = `mv`
 - Borrar directorio = `rmdir`
-
+- Ver directorios y archivos en forma de arbol = `tree`
+    - para ver niveles especificos usamos = `tree -L (nivel que queremos ver ej: 2`
+- Crear archivos = `Touch` *Si no especificamos la extencion se creara un .txt*
+- Cambiar nombre a un archivo = `mv (Nombre viejo) (Nombre nuevo)`

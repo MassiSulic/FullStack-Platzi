@@ -52,9 +52,6 @@ siendo de MacOS y sistemas Unix respectivamente
 
 *Comandos:*
 
-`Dominio`...................`Acción`
-
-```
 `Down arrow, Enter, eoj`	    `Avanza una línea.`
 Up arrow, yok	            Mover hacia atrás una línea.
 Space barof	                Avanzar una página.
@@ -70,4 +67,4 @@ p	                        Vaya al principio del archivo.
 Np	                        Ir al N por ciento en el archivo.
 h	                        Mostrar ayuda.
 q	                        Salir less_
-```
+

@@ -58,4 +58,14 @@ siendo de MacOS y sistemas Unix respectivamente
 
 * * *
 
-## Estructura de los comandos
+## Que es un comando y sus tipos
+
+*Los comandos pueden tener 4 tipos*
+
+1. Un programa ejecutable
+2. Un comando de utilidad de shell
+3. Una funcion de shell
+4. Un alias 
+
+Para saber que tipo de comando es un comando podemos usar el comando = `Type`
+Para conocer el manual de un comando = `man`

@@ -52,19 +52,19 @@ siendo de MacOS y sistemas Unix respectivamente
 
 *Comandos:*
 
-`Down arrow, Enter, e, o, j`	    `Avanza una línea.`
-`Up arrow, yok`	                    `Mover hacia atrás una línea.`
-`Space barof`	                    `Avanzar una página.`
-`b	Mover`                          `hacia atrás una página.`
-`/pattern`	                        `Busque hacia adelante los patrones coincidentes.`
-`?pattern`                          `Busque hacia atrás los patrones coincidentes.`
-`n`	                                `Repita la búsqueda anterior.`
-`N`	                                `Repita la búsqueda anterior en dirección inversa.`
-`g`	                                `Vaya a la primera línea del archivo.`
-`Ng`                                `Vaya a la línea N-ésima en el archivo.`
-`G`	                                `Ir a la última línea del archivo.`
-`p`	                                `Vaya al principio del archivo.`
-`p`	                                `Ir al N por ciento en el archivo.`
-`h`	                                `Mostrar ayuda.`
-`q`	                                `Salir less_`
+- `Down arrow, Enter, e, o, j`	        `Avanza una línea.`
+- `Up arrow, yok`	                    `Mover hacia atrás una línea.`
+- `Space barof`	                        `Avanzar una página.`
+- `b	Mover`                          `hacia atrás una página.`
+- `/pattern`	                        `Busque hacia adelante los patrones coincidentes.`
+- `?pattern`                            `Busque hacia atrás los patrones coincidentes.`
+- `n`	                                `Repita la búsqueda anterior.`
+- `N`	                                `Repita la búsqueda anterior en dirección inversa.`
+- `g`	                                `Vaya a la primera línea del archivo.`
+- `Ng`                                  `Vaya a la línea N-ésima en el archivo.`
+- `G`	                                `Ir a la última línea del archivo.`
+- `p`	                                `Vaya al principio del archivo.`
+- `p`	                                `Ir al N por ciento en el archivo.`
+- `h`	                                `Mostrar ayuda.`
+- `q`	                                `Salir less_`
 

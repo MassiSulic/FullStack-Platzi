@@ -39,3 +39,35 @@ siendo de MacOS y sistemas Unix respectivamente
     - para ver niveles especificos usamos = `tree -L (nivel que queremos ver ej: 2`
 - Crear archivos = `Touch` *Si no especificamos la extencion se creara un .txt*
 - Cambiar nombre a un archivo = `mv (Nombre viejo) (Nombre nuevo)`
+- Previsualizar primeras lineas de un archivo = `head`
+    - Con `head -n (Nunero) establecemos cuantas lineas queremos ver del archivo de texto`
+- Previsualizar ultimas lineas de un archivo de texto = `tail`
+    - Con `head -n (Nunero) establecemos cuantas lineas queremos ver del archivo de texto`
+- Matar procesos terminal = `Control + C`
+
+## Exploracion de texto en Terminal
+
+
+### Editor de texto Less 
+
+*Comandos:*
+
+`Dominio`	                    `Acción`
+
+```
+Down arrow, Enter, eoj	    Avanza una línea.
+Up arrow, yok	            Mover hacia atrás una línea.
+Space barof	                Avanzar una página.
+b	Mover                   hacia atrás una página.
+/pattern	                Busque hacia adelante los patrones coincidentes.
+?pattern                    Busque hacia atrás los patrones coincidentes.
+n	                        Repita la búsqueda anterior.
+N	                        Repita la búsqueda anterior en dirección inversa.
+g	                        Vaya a la primera línea del archivo.
+Ng	                        Vaya a la línea N-ésima en el archivo.
+G	                        Ir a la última línea del archivo.
+p	                        Vaya al principio del archivo.
+Np	                        Ir al N por ciento en el archivo.
+h	                        Mostrar ayuda.
+q	                        Salir less_
+```

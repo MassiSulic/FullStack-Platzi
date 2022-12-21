@@ -52,10 +52,10 @@ siendo de MacOS y sistemas Unix respectivamente
 
 *Comandos:*
 
-`Dominio`	                    `Acción`
+`Dominio`...................`Acción`
 
 ```
-Down arrow, Enter, eoj	    Avanza una línea.
+`Down arrow, Enter, eoj`	    `Avanza una línea.`
 Up arrow, yok	            Mover hacia atrás una línea.
 Space barof	                Avanzar una página.
 b	Mover                   hacia atrás una página.

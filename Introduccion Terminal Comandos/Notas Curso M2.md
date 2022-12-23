@@ -85,3 +85,20 @@ Y por ultimo si queremos asignar nuevas contraseñas, por ejemplo al usuario roo
 
 # Variables de entorno
 
+Las variables de entorno son útiles cuando necesitamos que cierta información prevalezca para poder trabajar más rápido o necesitamos guardar información para no tener que recordarla constantemente.
+
+.
+Es decir que las variables de entorno no son mas que valores que apuntan a ciertos lugares para no tener que escribir el comando completo que me lleve a ese lugar o que haga cierta accion 
+
+.
+Las variables de entorno de mayor interes son las siguientes 
+- `HOME` = Indica el home del usuario
+- `PATH` = Indica las direcciones de donde están los binarios que usa el sistema
+- `ZSH_VERSION` = Indica la versión del bash que estás utilizando
+- `SHELL` = Dirección de la shell que estás utilizando
+
+Por cierto, todas las variables de entorno se mandan a llamar con un signo de peso por delante, de lo contrario se interpretará como un comando.
+Hay muchas más, pero estas son las que te pueden interesar. Por cierto, por convención las variables de entorno se crean en mayúsculas.
+
+.
+Para crear variables de entorno hay que modificar el archivo `.zshrc` donde podemos escribir las variables que despues se pueden utilizar siempre en la terminal

@@ -21,5 +21,5 @@ Buenas noches, mundo!
 - `<` = Redirecciona el stdin desde un archivo
 - `<<` = Conocido como HERE-DOCUMENT o HereDoc
 - `<<<` = Conocido como HERE-STRING
-- `|` = Es un tipo de redireccionamiento ya que la salida (stdout) de un comando es la entrada (stdin) de otro.
+- `|` = pipe es un tipo de redireccionamiento ya que la salida (stdout) de un comando es la entrada (stdin) de otro.
 - `tee` = El comando tee redirecciona la salida (stdout) a ambos, un archivo y a la terminal.

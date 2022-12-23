@@ -102,3 +102,29 @@ Hay muchas más, pero estas son las que te pueden interesar. Por cierto, por con
 
 .
 Para crear variables de entorno hay que modificar el archivo `.zshrc` donde podemos escribir las variables que despues se pueden utilizar siempre en la terminal
+
+# Comandos de busqueda
+
+Para buscar la ruta especifica de cierto archivo o directorio podemos usar 2 comandos 
+
+1. `Which + Archivo o Directorio` Esto nos devuelve la ruta del archivo o directorio
+2. `whereis +Archivo` Esto nos devuelve lo mismo pero mas espeficico
+
+***
+
+Y por ultimo tenemos el comando find, un comando super completo para buscar cualquier cosa dentro de la maquina y por medio de la terminal
+
+La sintaxis basica del comando es la siguiente 
+
+```
+find [rutaDesdeDondeEmpezarBuscar] [opciones]
+```
+
+Algunos de los parametros o banderas mas destacados con los siguientes
+1. `-name` = Busca por nombre de archivos
+    - Para utilizar wildcards en zbash hay que encerrar entre comillas ej: -name "*.txt"
+2. `-type` = Busca por el tipo de archivo, este puede ser en su mayoria `d` directorios `f` archivos
+3. `-maxdepth` = Especifica que la busqueda tendra una profundidad especifica
+4. `-mindepth` = Especifica que la busqueda tendra una profundidad minia
+5. `-size` = Buscar por peso de archivos 
+6. `-empty` = Busca los directorios vacios 

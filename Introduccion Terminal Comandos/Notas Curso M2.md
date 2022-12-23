@@ -128,3 +128,20 @@ Algunos de los parametros o banderas mas destacados con los siguientes
 4. `-mindepth` = Especifica que la busqueda tendra una profundidad minia
 5. `-size` = Buscar por peso de archivos 
 6. `-empty` = Busca los directorios vacios 
+
+# Uso del comando grep
+
+El comando grep busca cualquier coincidencia que le pasemos en cualquier stdout
+
+su sintaxis basica es la siguiente 
+
+```
+grep [ExpresiónRegular] [archivoDondeBuscar]
+```
+
+y las flags o parametros principales son los siguientes 
+
+1. `m` = Limita las líneas de la búsqueda
+2. `c` = Cuenta las ocurrencias
+3. `v` =  Excluye las ocurrencias
+4. `i` = Ignora él case sensitive es decir las mayusculas y minusculas

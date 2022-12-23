@@ -37,7 +37,8 @@ Buenas noches, mundo!
 Los permisos de cualquier cosa se dividen en 4 grupos
  1. `-` = Es un archivo normal, como un documento de texto, una foto, un video, etc.
  2. `d` = Por directory, es un directorio
- 3. `l` = Es un enlace simbólico.
+ 3. `l` = Es un enlace simbólico. Que no es mas que un acceso directo
+    - `ln -s (Ruta o archivo)` = Me crea un acceso directo hacia ese lugar *Los accesos directos noalteran los permisos del archivo original*
  4. `b` = Es un enlace simbólico.
 
 Per ademas los permisos se los podemos asignar en diferentes modos o grupos 
@@ -81,3 +82,6 @@ Para cambiar de usuario a root puedo usar siempre el comando `sudo su` que no es
 
 .
 Y por ultimo si queremos asignar nuevas contraseñas, por ejemplo al usuario root para cambiar de usuario con `su root` usamos el comando `passwd`
+
+# Variables de entorno
+

@@ -44,6 +44,9 @@ siendo de MacOS y sistemas Unix respectivamente
 - Previsualizar ultimas lineas de un archivo de texto = `tail`
     - Con `head -n (Nunero) establecemos cuantas lineas queremos ver del archivo de texto`
 - Matar procesos terminal = `Control + C`
+- `echo` = Imprime el mensaje que le indiques
+- `cal` = De calendar imprime un calendario con la fecha actual
+- `date` = 	Imprime la fecha actual
 
 ## Exploracion de texto en Terminal con Less y cat
 

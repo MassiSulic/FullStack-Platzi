@@ -60,3 +60,24 @@ drwxr-xr-x
 
 Los permisos se pueden editar con numeracion octal, binaria y representativa. Adjunto un link con una pagina para ver la representacion octal que tendria que tener cada permiso: [Pagina para ver permisos](https://josenoriegaa.github.io/linux-file-system-permission-generator/index.html)
 
+# Cambiar permisos
+
+Para cambiar la propiedad de un archivo usamos `chown`. Y para cambiar los permisos utilizamos el comando `chmod` Este comando nos permite cambiar los permisos del sistema y se los podemos asgignar de la forma octal o con la forma de permisos simbolica, la estructura del comando para cambiar los permisos es la siguiente:
+```
+chmod [simboloDelUsuario][operador][permiso] [archivoParaCambiarSusPermisos]
+```
+Donde 
+ 1. Simbolo del usurio puede ser
+    - `u` = User / Usuario
+    - `g` = Group / Grupo
+    - `o` = Others / Otros
+ 2. Operadores, es decir si queremos agregar permisos `+`, quitar `-` o sobre escribir `=`
+ 3. Tenemos que ingresar el archivo al que le queremos modificar los permisos
+
+Por otro lado tambien tenemos el comando `whoami` que me dice que usuario soy ya que puedo estar en mi usuario y mi grupo o en el usuario y grupo root
+
+.
+Para cambiar de usuario a root puedo usar siempre el comando `sudo su` que no es mas que pedirle prestados los permisos al usuario root para cambiar de usuario o *Switch User*.
+
+.
+Y por ultimo si queremos asignar nuevas contraseñas, por ejemplo al usuario root para cambiar de usuario con `su root` usamos el comando `passwd`

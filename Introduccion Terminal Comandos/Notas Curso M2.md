@@ -14,6 +14,7 @@ Buenas noches, mundo!
 # Control de flujo
 
 - `>` = Redirecciona la salida. Por defecto redirecciona el Standar Output
+    - Pero ademas podemos crear archivos de texto con este comando, ya que al no especificar el input lo va a estar esperando de mi teclado. Pero ademas si este comando lo ejecutamos en mac directamente vamos a poder escribir dentro del archivo sin necesidad de nada mas y al poner `Control + c` se va a guardar el contenido en el archivo
 - `>>` = Concatena la salida con lo que ya tenga el archivo a donde se está redirigiendo la salida
 - `2>` = Redirecciona el file descriptor 2 (En este caso Standar Error)
     - `2>>` = Concatena el stderr
@@ -58,3 +59,4 @@ drwxr-xr-x
 ```
 
 Los permisos se pueden editar con numeracion octal, binaria y representativa. Adjunto un link con una pagina para ver la representacion octal que tendria que tener cada permiso: [Pagina para ver permisos](https://josenoriegaa.github.io/linux-file-system-permission-generator/index.html)
+

@@ -45,11 +45,13 @@ siendo de MacOS y sistemas Unix respectivamente
     - Con `head -n (Nunero) establecemos cuantas lineas queremos ver del archivo de texto`
 - Matar procesos terminal = `Control + C`
 
-## Exploracion de texto en Terminal con Less
+## Exploracion de texto en Terminal con Less y cat
 
 Less tiene como funcion leer texto en la terminal pero no editarlo, ademas tiene funcionalidades como buscar cierto texto con `/(palabra)` y nos va a buscar si esta la palabra en el texto, pero solo es para visualizar no para insertar. Y para salir usamos `q`
 
 [Comandos](https://victorhckinthefreeworld.com/2022/06/30/algunos-trucos-utiles-de-uso-del-paginador-less/)
+.
+Cat tambien es un visualizador de archivos, pero tiene como diferencia menos funcionalidades que less pero puede concatenar los archivos que le ingresemos `cat (Archivo 1) (Archivos 2)` 
 
 * * *
 

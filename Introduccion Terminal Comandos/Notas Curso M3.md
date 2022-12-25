@@ -40,3 +40,18 @@ Y para descomprimir seria el siguiente comando
 ```
 unzip [archivoADescomprimir]
 ```
+# Administracion de procesos | Foreground y Background
+
+- `ps` = Muestra una tabla con los procesos que se están ejecutando en la terminal
+- `top` = Muestra una interfaz con los procesos que se están ejecutando más los recursos que consumen información adicional en todo nuestro sistema 
+    - `htop` = Es lo mismo que top con la diferencia que tiene una mejor interfaz y funcionalidades mas sencillas de usar
+- `kill` = Mata el proceso que le indiques, se lo podemos indicar con PID *ProcessID*
+- `jobs` = Muestra especificamente los procesos que estan en background en la terminal
+.
+Cuando un proceso está en ejecución sin que sea mostrado en la terminal se dice que se está ejecutando en el background. Si se muestra la ejecución del comando dentro de la terminal se dice que está en el foreground.
+
+- `fg` = Trae los procesos especificados al foreground 
+    - `fg %x` = En zsh para que interprete que proceso queremos traer hay que poner %
+
+- `bg` = Funciona igual que fg solo que envia procesos al backgroung
+

@@ -74,5 +74,5 @@ Una vez dentro podemos usar las siguientes flags para cambiar entre modos
 - `:qw` = Para salir y guardar el contenido 
 - `dd` = Borra completamente la linea en donde nos encontremos 
 
-(Mas comandos de Vim)[https://vimdoc.sourceforge.net/htmldoc/usr_toc.html]
+[Mas comandos de Vim](https://vimdoc.sourceforge.net/htmldoc/usr_toc.html)
 

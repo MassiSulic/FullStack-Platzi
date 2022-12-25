@@ -55,3 +55,24 @@ Cuando un proceso está en ejecución sin que sea mostrado en la terminal se dic
 
 - `bg` = Funciona igual que fg solo que envia procesos al backgroung
 
+# Editores de texto Terminal Vim
+
+En vim nos manejamos mas que nada por modos, modo insertar, modo normal, modo busqueda.
+
+Para crear un archivo y empezar a escribir el comando basico es el siguiente 
+
+```
+vim [nombre del archivo]
+```
+Una vez dentro podemos usar las siguientes flags para cambiar entre modos 
+
+- `i` = Entramos en modo insercion, nos permite escribir
+    - `esc` = Para salir de este modo y entrar en el modo normal
+- `/` = Es como less y nos permite buscar por palabras dentro del texto
+    - `/ + delete` = Volvemos a apretar para salir del modo busqueda y borramos /
+- `:q` = Para salir del editor de texto
+- `:qw` = Para salir y guardar el contenido 
+- `dd` = Borra completamente la linea en donde nos encontremos 
+
+(Mas comandos de Vim)[https://vimdoc.sourceforge.net/htmldoc/usr_toc.html]
+

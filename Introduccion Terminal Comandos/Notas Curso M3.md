@@ -76,3 +76,11 @@ Una vez dentro podemos usar las siguientes flags para cambiar entre modos
 
 [Mas comandos de Vim](https://vimdoc.sourceforge.net/htmldoc/usr_toc.html)
 
+# Personalizacion de la Terminal
+
+Comandos utiles
+
+- `neofetch` = Me muestra informacion del sistema y de codigo de colores ademas de las fuentes
+- `p10k cinfigure` = Abre la configuracion del tema actual del prompt
+
+Para ver todas las configuraciones que se pueden hacer en mac sin descargar otra shell se puede ingresar al siguiente [Link](https://platzi.com/blog/terminal-en-big-sur-mas-bonita-que-nunca/)

@@ -63,3 +63,14 @@
 - `git checkout "Rama especificada"` = Se mueve a la rama especificada.
 - `git merge "Rama con la que se va a fusionar"` = Fusiona la rama actual con la rama especificada y produce un nuevo commit de esta fusión.
 - `git branch` = Lista las ramas generadas.
+
+## Modos de Git
+
+> El modo inicial o `Directory` consiste en que git te puede ver si hay archivos creados o modificados pero esos cambios no tienen seguimiento por Git.
+
+> Para que git pueda empezar a seguir o `Trackerar` esos archivos nosotros los tenemos que gregar con `git add "Archivos"` Esta zona se denomina `Stageing`(Tambien podemos usar `.` para especificar que queremos agregar todos los cambios que git detecto).
+
+.
+Y el ultimo modo o estado de Git es el `Repository` que no es mas que el lugar donde terminamos subiendo nuestros archivos para terminar de subirlos debemos utilizar el comando `git commit -m "Mensaje del commit"` (Cabe aclarar que no especificamos commit Git nos abrira un archivo vim para poder escribir el nombre del commit ya que es una buena practica hacerlo, para salir debemos escribir esc shift + zz).
+
+

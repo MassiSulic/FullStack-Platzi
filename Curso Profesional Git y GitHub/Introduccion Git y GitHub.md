@@ -25,7 +25,7 @@
 ## Analizar cambios de archivos
 
 - `git log` = Lista de manera descendente los commits realizados.
-- `git log --stat` = Además de listar los commits, muestra la cantidad de bytes añadidos y eliminados en cada uno de los archivos modificados.
+- `git log --stat` = Además de listar los commits, muestra la cantidad de bytes añadidos y eliminados en cada uno de los archivos modificados e informacion mas detallada.
 - `git log --all --graph --decorate --oneline` = *Comando importante.* Muestra de manera comprimida toda la historia del repositorio de manera gráfica y embellecida.
 - `git show "filname"` = Permite ver la historia de los cambios en un archivo.
 - `git diff "Commit 1" "Commit 2"` = Compara diferencias entre en cambios confirmados.

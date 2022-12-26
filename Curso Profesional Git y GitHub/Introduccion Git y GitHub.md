@@ -1,5 +1,5 @@
-### Curso profesional Git y GitHub
-# Conceptos
+# Curso profesional Git y GitHub
+## Conceptos
 
 > Un sistema de control de versiones como Git nos ayuda a guardar el historial de cambios y crecimiento de los archivos de nuestro proyecto.
 
@@ -9,7 +9,7 @@
 
 > Y por ultimo la diferencia entre Git y GitHub es que Git es un sistema de control de versiones que nos permite llevar registro de todo lo que le pasa a nuestros archivos en texto plano, mientras que GitHub es el servidor donde podemos almacenar todo ese historial de versiones que tengamos de nuestros proyectos 
 
-# Comandos basicos
+## Comandos basicos
 
 
 

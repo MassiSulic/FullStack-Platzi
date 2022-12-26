@@ -11,5 +11,11 @@
 
 ## Comandos basicos
 
+- `git init` = Inicializa un repositorio de GIT en la carpeta donde se ejecute el comando.
+- `git add` = Añade los archivos especificados al área de preparación *staging*.
+    - `git add .` = Añade todos los archivos que hayamos modificado, mientras que de la otra forma los tendremos que añadir manualmente.
+- `git commit -m (Descripcion del commit)` = confirma los archivos que se encuentran en el área de preparación y los agrega al repositorio. La m del comando significa *Message* o *Mensaje* y el msj que debemos agregar debe ser descriptivo a lo que estemos agregando 
+- ``
+
 
 

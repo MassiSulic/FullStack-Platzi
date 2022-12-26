@@ -64,6 +64,10 @@
 - `git merge "Rama con la que se va a fusionar"` = Fusiona la rama actual con la rama especificada y produce un nuevo commit de esta fusión.
 - `git branch` = Lista las ramas generadas.
 
+> Para conocer el estandar actual de trabajo con las Branches se pueden ver los siguientes links que lo explican
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
+https://danielkummer.github.io/git-flow-cheatsheet/
+
 ## Modos de Git
 
 > El modo inicial o `Directory` consiste en que git te puede ver si hay archivos creados o modificados pero esos cambios no tienen seguimiento por Git.

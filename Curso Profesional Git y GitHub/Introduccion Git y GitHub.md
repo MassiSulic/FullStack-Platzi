@@ -68,9 +68,32 @@
 
 > El modo inicial o `Directory` consiste en que git te puede ver si hay archivos creados o modificados pero esos cambios no tienen seguimiento por Git.
 
-> Para que git pueda empezar a seguir o `Trackerar` esos archivos nosotros los tenemos que gregar con `git add "Archivos"` Esta zona se denomina `Stageing`(Tambien podemos usar `.` para especificar que queremos agregar todos los cambios que git detecto).
+> Para que git pueda empezar a seguir o `Trackerar` esos archivos nosotros los tenemos que gregar con `git add "Archivos"` Esta zona se denomina `Stageing`(Tambien podemos usar `.` para especificar que queremos agregar todos los cambios que git detecto). Por otro lado para acceder a lo que esta viendo la `Satgeing zone` podemos usar el comando git status. (Este comando nos muestra todos los archivos que estan `Untracked` que se encuentran en el modo inicial y los `Tracked` que estan en el modo `Stageing` ese es el alcance que tiene esta zona)
 
-.
-Y el ultimo modo o estado de Git es el `Repository` que no es mas que el lugar donde terminamos subiendo nuestros archivos para terminar de subirlos debemos utilizar el comando `git commit -m "Mensaje del commit"` (Cabe aclarar que no especificamos commit Git nos abrira un archivo vim para poder escribir el nombre del commit ya que es una buena practica hacerlo, para salir debemos escribir esc shift + zz).
+> Y el ultimo modo o estado de Git es el `Repository` que no es mas que el lugar donde terminamos subiendo nuestros archivos para terminar de subirlos debemos utilizar el comando `git commit -m "Mensaje del commit"` (Cabe aclarar que no especificamos commit Git nos abrira un archivo vim para poder escribir el nombre del commit ya que es una buena practica hacerlo, para salir debemos escribir esc shift + zz).
+    > Por ultimo cabe aclarar que Git es un control de versiones, lo que significa que si no queremos podemos por optar no usar GitHub y el repositorio se creara en nuestra computadora y no deberemos subirlo con comandos como `git push`
 
+> Para entender bien esta parte hay que ver la imagen adjunta en la capeta `3 estados de Git`
 
+## Profundizando comandos
+
+- `git status` = Muestra informacion del modo inicial y del modo Stageing
+    - Y podemos encontrar la siguiente informacion estructurada 
+    (Muestra en que rama estoy o me encuentro actualmente)
+    (Me dice si tengo commits por hacer) (O si ya tengo todos los commits realizados)
+    (y si tengo archivos que no esta en la Stageing)
+
+- `git log` = Muestra el historico de commits realizados
+    (Commit tag)(Si es el actual es HEAD y muestra en que branch se encuentra)
+    (Autor del commit)
+    (Fecha de la realizacion de cambios)
+    (Mensaje que caracteriza al commit)
+
+- `git show` = Muestra especificamente los cambios realizados en el archivo
+    (Lo primero que muestra es lo mismo que git log)
+    diff (Muestra los archivos que se estan comparando)
+        a/"Archivo" b/"Archivo"
+    index (Muestra informacion de los tags)
+    @@ (Muestra como cambiaron los bits de los archivos) @@
+
+- `git checkout (tag)` = Me permite volver a una version antigua de un archivo y ese cambio para a estar `Untracked` si le hago commit estoy permiendo los cambios que tenia hasta ese momento ya que es como si volviera en el tiempo y para dejar el archivo como estaba uso el comando `git checkout main`

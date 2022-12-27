@@ -5,9 +5,11 @@
 
 > En realidad, los cambios y diferencias entre las versiones de nuestros proyectos pueden tener similitudes, algunas veces los cambios pueden ser solo una palabra o una parte específica de un archivo específico. Git está optimizado para guardar todos estos cambios de forma atómica e incremental, o sea, aplicando cambios sobre los últimos cambios, estos sobre los cambios anteriores y así hasta el inicio de nuestro proyecto.
 
-> Hay que tener en cuenta que no es una buena practica  guardar en GitHub archivos binarios, si no mas bien guardar archivos de texto plano 
+> Hay que tener en cuenta que no es una buena practica  guardar en GitHub archivos binarios, si no mas bien guardar archivos de texto plano.
 
-> Y por ultimo la diferencia entre Git y GitHub es que Git es un sistema de control de versiones que nos permite llevar registro de todo lo que le pasa a nuestros archivos en texto plano, mientras que GitHub es el servidor donde podemos almacenar todo ese historial de versiones que tengamos de nuestros proyectos 
+> Y por ultimo la diferencia entre Git y GitHub es que Git es un sistema de control de versiones que nos permite llevar registro de todo lo que le pasa a nuestros archivos en texto plano, mientras que GitHub es el servidor donde podemos almacenar todo ese historial de versiones que tengamos de nuestros proyectos.
+
+> El HEAD es basicamente un apuntador que nos dice donde estamos trabajando, es decir es donde esta puesta nuestra vista en los archivos, si nos movemos de branch o si hacemos nuevos commits ese apuntador nos va a decir donde estamos apuntando y por ende donde se van a realizar los cambios.
 
 ## Comandos basicos
 
@@ -62,6 +64,8 @@
 - `git branch "Nombre de la branch"` = Crea una nueva rama.
 - `git checkout "Rama especificada"` = Se mueve a la rama especificada.
 - `git merge "Rama con la que se va a fusionar"` = Fusiona la rama actual con la rama especificada y produce un nuevo commit de esta fusión.
+    - Hay que tener en cuenta que el merge hay que hacerlo en la branch que queremos traer los cambios, es decir el HEAD tiene que estar apuntando a la branch que va a recibir los commits. Por ejemplo, si yo quiero que la rama x se fusione con la rama main tengo que estar en la rama main, porque si no el main va a pasar a ser la rama x
+    - Ademas si nosotros queremos actualizar una branch con main tenemos que usar el merge pero en vez de con main en la rama que queremos actualizar, esto seria como hacer un pull en una rama con main
 - `git branch` = Lista las ramas generadas.
 
 > Para conocer el estandar actual de trabajo con las Branches se pueden ver los siguientes links que lo explican
@@ -72,7 +76,7 @@ https://danielkummer.github.io/git-flow-cheatsheet/
 
 > El modo inicial o `Directory` consiste en que git te puede ver si hay archivos creados o modificados pero esos cambios no tienen seguimiento por Git.
 
-> Para que git pueda empezar a seguir o `Trackerar` esos archivos nosotros los tenemos que gregar con `git add "Archivos"` Esta zona se denomina `Stageing`(Tambien podemos usar `.` para especificar que queremos agregar todos los cambios que git detecto). Por otro lado para acceder a lo que esta viendo la `Satgeing zone` podemos usar el comando git status. (Este comando nos muestra todos los archivos que estan `Untracked` que se encuentran en el modo inicial y los `Tracked` que estan en el modo `Stageing` ese es el alcance que tiene esta zona)
+> Para que git pueda empezar a seguir o `Trackerar` esos archivos nosotros los tenemos que gregar con `git add "Archivos"` Esta zona se denomina `Staging`(Tambien podemos usar `.` para especificar que queremos agregar todos los cambios que git detecto). Por otro lado para acceder a lo que esta viendo la `Satging zone` podemos usar el comando git status. (Este comando nos muestra todos los archivos que estan `Untracked` que se encuentran en el modo inicial y los `Tracked` que estan en el modo `Staging` ese es el alcance que tiene esta zona)
 
 > Y el ultimo modo o estado de Git es el `Repository` que no es mas que el lugar donde terminamos subiendo nuestros archivos para terminar de subirlos debemos utilizar el comando `git commit -m "Mensaje del commit"` (Cabe aclarar que no especificamos commit Git nos abrira un archivo vim para poder escribir el nombre del commit ya que es una buena practica hacerlo, para salir debemos escribir esc shift + zz).
     > Por ultimo cabe aclarar que Git es un control de versiones, lo que significa que si no queremos podemos por optar no usar GitHub y el repositorio se creara en nuestra computadora y no deberemos subirlo con comandos como `git push`
@@ -101,3 +105,60 @@ https://danielkummer.github.io/git-flow-cheatsheet/
     @@ (Muestra como cambiaron los bits de los archivos) @@
 
 - `git checkout (tag)` = Me permite volver a una version antigua de un archivo y ese cambio para a estar `Untracked` si le hago commit estoy permiendo los cambios que tenia hasta ese momento ya que es como si volviera en el tiempo y para dejar el archivo como estaba uso el comando `git checkout main`
+
+## Modo remoto Git
+
+La realidad es que Git es una poderosa herramienta para controlar las versiones de nuestros archivos, este control de versiones lo podemos hacer en nuestro repositorio local y tener nuestro historico en nuestro equipo, pero tambien podemos tener un repositorio remoto. Esto nos permite trabajar conjuntamente con otras personas en proyectos grandes. No cambian mucho los comandos a diferencia de tener un repositorio local, pero vamos a pasar a detallar los comandos que debemos utilizar para reflejar cambios en el repositorio remoto.
+
+### Comandos modo remoto Git
+
+- `git clone "Url del repositorio"` = Nos permite descargar los archivos de la última versión de la rama principal y todo el historial de cambios en la carpeta.
+- `git push` = Luego de hacer `git add` y `git commit` debemos ejecutar este comando para mandar los cambios al servidor remoto.
+- `git fetch` = Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).
+- `git merge` = También usamos el comando git merge con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo.
+- `git pull` = Básicamente, git fetch y git merge al mismo tiempo. Quiere decir que una vez clonado el repo remoto con `git clone` para actualizar los cambios que tenga el repo remoto en vez de utilizar dos comandos podemos solo hacer `pull
+
+### Comandos para controlar los commits del modo remoto
+
+- `git log --oneline` = Te muestra el id commit y el título del commit.
+- `git log --decorate` = Te muestra donde se encuentra el head point en el log.
+- `git log --stat` = Explica el número de líneas que se cambiaron brevemente.
+- `git log -p` = Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
+- `git shortlog` = Indica que commits ha realizado un usuario, mostrando el usuario y el título de sus commits.
+- `git log --graph --oneline --decorate` = Muestra mensajes personalizados de los commits.
+- ``
+
+*Comandos para ver historico de commits con filtro de fecha, usuarios, archivos*
+
+- `git log -3` = Limitamos el número de commits.
+- `git log --after=“2018-1-2”`
+- `git log --after=“today”` = Commits para localizar por fechas.
+- `git log --author=“Name Author”` = Commits hechos por autor que cumplan exactamente con el nombre.
+- `git log --grep=“INVIE”` = Busca los commits que cumplan tal cual está escrito entre las comillas.
+- `git log --grep=“INVIE” –i` = Busca los commits que cumplan sin importar mayúsculas o minúsculas.
+- `git log – index.html` = Busca los commits en un archivo en específico.
+- `git log -S “Por contenido”` = Buscar los commits con el contenido dentro del archivo.
+- `git log > log.txt` = guardar los logs en un archivo txt
+
+## Conflictos al hacer un merge
+
+> Si temngo dos lineas editadas en un mismo archivo esto me creara un conflicto, la ventaja es que Git se encarga de mostrarme esos conflictos con una sitaxys muy simple
+
+```
+<<<<<< HEAD (Me dice que la linea que esta en conflicto y estoy viendo, pertenece a donde recien estaba apuntando)
+        (Conflicto)
+-- 
+        (Conflicto)
+
+>>>>>> "Branch de la que estoy haciendo el merge" (Me dice que lo que estoy viendo y esta en conflicto pertenece a la branch de la cual quiero hacer el merge)
+```
+
+# Resumen de comandos Utiles
+
+> Voy a pasar a enumerar los comandos mas utiles que se pueden usar para ver el estado del repo, ya sean los commits, los merges, el estado actual del repo y en gral toda info util para solucionar problemas y conflictos
+
+- `git log` = Muestra una lista de todos los commits realizados por que usuario, en que fecha y con msj descriptivo, ademas muestra a donde esta apuntando HEAD (Puede ser a una branch o a multiples)
+
+- `git show` = Muestra detalladamente los cambios realizados en el ultimo commit (Tambien podemos especificar en que commit queremos ver los cambios)
+
+- `git log --all --graph --decorate --oneline` = Muestra de una forma muy visualel historico de branches del repo, viendo cuando se separaron y volvieron a juntar junto con los commits que tienen cada uno`

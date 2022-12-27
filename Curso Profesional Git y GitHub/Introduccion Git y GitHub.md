@@ -197,4 +197,10 @@ La realidad es que Git es una poderosa herramienta para controlar las versiones 
 
 ## Conectar por ssh una Mac a GitHub
 
-[En el siguiente Link se especifican los pasos a seguir](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+[En el siguiente Link se especifican los pasos a seguir para conectar por ssh a GitHub](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+[En este Link se resuelven los problemas mas comunes al conectar ssh](https://docs.github.com/es/authentication/troubleshooting-ssh/error-permission-denied-publickey)
+
+[Como generar una clave ssh en Mac](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+[Como agregar la clave ssh a GitHub](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)

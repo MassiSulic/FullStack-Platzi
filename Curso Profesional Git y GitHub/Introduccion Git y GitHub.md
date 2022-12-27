@@ -146,6 +146,7 @@ La realidad es que Git es una poderosa herramienta para controlar las versiones 
 
 ```
 <<<<<< HEAD (Me dice que la linea que esta en conflicto y estoy viendo, pertenece a donde recien estaba apuntando)
+
         (Conflicto)
 -- 
         (Conflicto)

@@ -11,6 +11,12 @@
 
 > El HEAD es basicamente un apuntador que nos dice donde estamos trabajando, es decir es donde esta puesta nuestra vista en los archivos, si nos movemos de branch o si hacemos nuevos commits ese apuntador nos va a decir donde estamos apuntando y por ende donde se van a realizar los cambios.
 
+> El `Origin` hace referencia al origien de donde se van a traer y enviar archivos con comandos como push y pull, es la url del repo en GitHub y es como la abreviacion o punto de referencia para saber que ahi es el origen o repositorio remoto
+
+> Cuando tenemos un repositorio remoto que hayamos creado nosotros y pongamos `git log` en la terminal voy a ver que ahora tengo el main que corresponde a mi repositorio local y el main que corresponde a mi repositorio en la nube p GitHub, para saber que estamos concetados correctamente tendremos que ver que figura como *origin/main.* Esto significa que estamos conectados correctamente
+    > Pero esto tiene dos variantes, si enlazamos un repo de la nube con el local solo veremos el HEAD que apunta a la rama que hace de main en  el local y el origin/main.
+    > Pero si creamos un repositorio en la nube y lo clonamos y no lo enlazamos tendremos dos HEAD, uno correspondera a nuestro main local y otro correspondera al del repositorio que se visualizara como *origin/HEAD* y no es mas que a que branch esta apuntando el origin del repo en la nube
+
 ## Comandos basicos
 
 - `git init` = Inicializa un repositorio de GIT en la carpeta donde se ejecute el comando.
@@ -106,9 +112,16 @@ https://danielkummer.github.io/git-flow-cheatsheet/
 
 - `git checkout (tag)` = Me permite volver a una version antigua de un archivo y ese cambio para a estar `Untracked` si le hago commit estoy permiendo los cambios que tenia hasta ese momento ya que es como si volviera en el tiempo y para dejar el archivo como estaba uso el comando `git checkout main`
 
-## Modo remoto Git
+## Repositorio remoto Git y GitHub
 
 La realidad es que Git es una poderosa herramienta para controlar las versiones de nuestros archivos, este control de versiones lo podemos hacer en nuestro repositorio local y tener nuestro historico en nuestro equipo, pero tambien podemos tener un repositorio remoto. Esto nos permite trabajar conjuntamente con otras personas en proyectos grandes. No cambian mucho los comandos a diferencia de tener un repositorio local, pero vamos a pasar a detallar los comandos que debemos utilizar para reflejar cambios en el repositorio remoto.
+
+### Pasos para conectar repo local con el remoto
+
+- `git remote add origin (url)` = Si queremos conectar el repositorio de GitHub con nuestro repositorio local, que creamos usando el comando git init, debemos ejecutar el comando anterior.
+- `git remote -v` =  Me premite ver si se guardo correctamente el origin de nuestro repositorio.
+- `git pull origin master --allow-unrelated-histories` = Trae la versión del repositorio remoto y hace merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y git merge o solo git pull con el flag --allow-unrelated-histories.
+- `git push origin master` = Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub.
 
 ### Comandos modo remoto Git
 
@@ -163,3 +176,17 @@ La realidad es que Git es una poderosa herramienta para controlar las versiones 
 - `git show` = Muestra detalladamente los cambios realizados en el ultimo commit (Tambien podemos especificar en que commit queremos ver los cambios)
 
 - `git log --all --graph --decorate --oneline` = Muestra de una forma muy visualel historico de branches del repo, viendo cuando se separaron y volvieron a juntar junto con los commits que tienen cada uno`
+
+## Como funcionan las llaves publicas y privadas
+
+> Las llaves públicas y privadas, conocidas también como cifrado asimétrico de un solo camino, sirven para mandar mensajes privados entre varios nodos con la lógica de que firmas tu mensaje con una llave pública vinculada con una llave privada que puede leer el mensaje.
+
+> Las llaves públicas y privadas nos ayudan a cifrar y descifrar nuestros archivos de forma que los podamos compartir sin correr el riesgo de que sean interceptados por personas con malas intenciones.
+
+### Pasos a seguir de estas llaves
+
+1. Ambas personas deben crear su llave pública y privada.
+2. Ambas personas pueden compartir su llave pública a las otras partes (recuerda que esta llave es pública, no hay problema si la “interceptan”).
+3. La persona que quiere compartir un mensaje puede usar la llave pública de la otra persona para cifrar los archivos y asegurarse que solo puedan ser descifrados con la llave privada de la persona con la que queremos compartir el mensaje.
+4. El mensaje está cifrado y puede ser enviado a la otra persona sin problemas en caso de que los archivos sean interceptados.
+5. La persona a la que enviamos el mensaje cifrado puede emplear su llave privada para descifrar el mensaje y ver los archivos.

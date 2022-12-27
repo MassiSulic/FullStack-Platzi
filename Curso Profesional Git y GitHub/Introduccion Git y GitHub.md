@@ -194,3 +194,7 @@ La realidad es que Git es una poderosa herramienta para controlar las versiones 
 4. El mensaje está cifrado y puede ser enviado a la otra persona sin problemas en caso de que los archivos sean interceptados.
 
 5. La persona a la que enviamos el mensaje cifrado puede emplear su llave privada para descifrar el mensaje y ver los archivos.
+
+
+
+

@@ -16,6 +16,7 @@
 > Cuando tenemos un repositorio remoto que hayamos creado nosotros y pongamos `git log` en la terminal voy a ver que ahora tengo el main que corresponde a mi repositorio local y el main que corresponde a mi repositorio en la nube p GitHub, para saber que estamos concetados correctamente tendremos que ver que figura como *origin/main.* Esto significa que estamos conectados correctamente
     > Pero esto tiene dos variantes, si enlazamos un repo de la nube con el local solo veremos el HEAD que apunta a la rama que hace de main en  el local y el origin/main.
     > Pero si creamos un repositorio en la nube y lo clonamos y no lo enlazamos tendremos dos HEAD, uno correspondera a nuestro main local y otro correspondera al del repositorio que se visualizara como *origin/HEAD* y no es mas que a que branch esta apuntando el origin del repo en la nube
+> Ademas a lo anterior me gustaria agregar que en Git tenemos 3 estados para un repositorio, el local que es simplemente `git init`, despues tendria el repositorio propio en la nube que seria donde estaria trabajando en local y enviando cambios a la nube con comandos como `git push` y por ultimo tendria los repositorios publicos pero en lo que puedo contribuir.
 
 ## Comandos basicos
 
@@ -120,6 +121,7 @@ La realidad es que Git es una poderosa herramienta para controlar las versiones 
 
 - `git remote add origin (url)` = Si queremos conectar el repositorio de GitHub con nuestro repositorio local, que creamos usando el comando git init, debemos ejecutar el comando anterior.
 - `git remote -v` =  Me premite ver si se guardo correctamente el origin de nuestro repositorio.
+- `git pull origin (Rama que elija)` = Esto me descargara la branch que quiera del repositorio en la nube en el que este trabajando.
 - `git pull origin master --allow-unrelated-histories` = Trae la versión del repositorio remoto y hace merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y git merge o solo git pull con el flag --allow-unrelated-histories.
 - `git push origin master` = Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub.
 

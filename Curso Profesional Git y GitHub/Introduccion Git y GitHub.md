@@ -25,6 +25,7 @@
     - `git add .` = Añade todos los archivos que hayamos modificado, mientras que de la otra forma los tendremos que añadir manualmente.
 - `git commit -m "Descripcion del commit"` = Confirma los archivos que se encuentran en el área de preparación y los agrega al repositorio. La m del comando significa *Message* o *Mensaje* y el msj que debemos agregar debe ser descriptivo a lo que estemos agregando. 
 - `git commit -am "Descripcion del commit"` = Añade al staging area y hace un commit mediante un solo comando. (No funciona con archivos nuevos). Esto significa que no hace falta utilizar el git add, saltamos ese comando utilizando la flag -a.
+- `git commit --amend` = No hace falta que cree un nuevo commit y lo suba, con este comando realizo los cambios en el ultimo commit que subi al repo
 - `git status` = Ofrece una descripción del estado de los archivos (untracked, ready to commit, nothing to commit). Si los archivos ya esta traqueados, si estan lostos para subir o si estan en el area de intercambio.
 - `git rm -r "fileName" -cached` = El comando git rm se puede usar para eliminar archivos sueltos o un conjunto de ellos. La función principal de git rm es eliminar los archivos en seguimiento del índice de Git. Además, git rm se puede usar para eliminar archivos tanto del índice del entorno de ensayo como del directorio de trabajo.
 - `git config --global user.email tu@email.com` = Configura un email.
@@ -38,6 +39,7 @@
 - `git log --all --graph --decorate --oneline` = *Comando importante.* Muestra de manera comprimida toda la historia del repositorio de manera gráfica y embellecida.
 - `git show "filname"` = Permite ver la historia de los cambios en un archivo.
 - `git diff "Commit 1" "Commit 2"` = Compara diferencias entre en cambios confirmados.
+- `git blame "Archivo"` = Muetra quien modifico cierto archivo linea por linea
 
 ## Branches y Checkout
 
@@ -75,6 +77,8 @@
     - Hay que tener en cuenta que el merge hay que hacerlo en la branch que queremos traer los cambios, es decir el HEAD tiene que estar apuntando a la branch que va a recibir los commits. Por ejemplo, si yo quiero que la rama x se fusione con la rama main tengo que estar en la rama main, porque si no el main va a pasar a ser la rama x
     - Ademas si nosotros queremos actualizar una branch con main tenemos que usar el merge pero en vez de con main en la rama que queremos actualizar, esto seria como hacer un pull en una rama con main
 - `git branch` = Lista las ramas generadas.
+- `git branch -r` = Muestra una lista con las ramas remotas.
+    - `git branch -a` Muestra todas las ramas, tanto las locales como las remotas.
 
 > Para conocer el estandar actual de trabajo con las Branches se pueden ver los siguientes links que lo explican
 https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
@@ -256,3 +260,57 @@ En el siguiente enlace encontraremos todo lo que podemos hacer con *Markdown* [L
 ## GitHub pages
 
 Dejo el link que nos explica como montar nuestro github pages, [link](https://pages.github.com/)
+
+## Rebase
+
+> Rebase es el proceso de mover o combinar una secuencia de confirmaciones en una nueva confirmación base. La reorganización es muy útil y se visualiza fácilmente en el contexto de un flujo de trabajo de ramas de funciones. El proceso general se puede visualizar de la siguiente manera.
+
+> Nunca debes reorganizar las confirmaciones una vez que se hayan enviado a un repositorio público. La reorganización sustituiría las confirmaciones antiguas por las nuevas y parecería que esa parte del historial de tu proyecto se hubiera desvanecido de repente.
+
+> El comando rebase es **_una mala práctica, sobre todo en repositorios remotos. Se debe evitar su uso, pero para efectos de práctica te lo vamos a mostrar, para que hagas tus propios experimentos. Con rebase puedes recoger todos los cambios confirmados en una rama y ponerlos sobre otra.
+
+Hay que tener en cuenta que el `rebase` primero se hace en la rama que vamos a fusionar y despues a main, o la que queremos que se peguen los cambios. *Ver imagen de referencia rebase*
+
+## Stash
+
+> Basicamente `Stash` es un comando que sirve para guardar los cambios sin hacer un commit para movernos de rama sin que se pierda el progreso
+
+### Comandos
+
+- `git stash` =  Me guarda el progreso que no esta siendo trackeado por git y que esta en mi directorio
+- `git stash list` = Me muestra todo lo que tengo guardado en stash
+- `git stash pop` = Vuelve o trae los cambios que se habian guardado sin la necesidad del commit
+- `git stash branch "Nombre de la branch"` = Lo que tengo en la lista de stash me lo envia a una branch que yo especifique
+- `git stash drop` = Me borra lo que tenga en las listas de stash
+
+## Limpiando entorno de trabajo
+
+- `git clean` = Me borra los archivos que todavia no tengan commitsy que no tenga que subir al repo
+- `git clean --dry-run` = Hace una simulacion de como se borrarian y que archivos se borrarian
+- `git clean -df` = Va a borrar directorios y archivos / `files` `directory`
+
+## Cherry-pick
+
+> Es un comando que conciste en traernos un solo commit especifico de una branch a otra, sin la necesidad de traer todo el branch o mas commits de los que realmente queremos 
+
+- `git cherry-pick "Tag del commit que queremos traer"` = Me trae solo el commit especificado
+
+## Reflog
+
+> Reflog es la verdadera magia de git, en este comando nada se pierde, git lo recuerda todo. Y tenemos los HEAD para volver o los tag, de esta forma no importa que hayamos hecho en nuestro repositorio, todo se puede recuperar ya sea con reset u otros comandos pero ahi tendremos toda la historia de nuestro proyecto
+
+- `git reflog` = Muestra TODA la historia del proyecto
+
+## Grep dentro de Git
+
+- `git grep "Palabra a buscar"` = Busca especificamente la palabra dentro del repo
+    - `-n` = Busca la palabra pero te dice especificamente en que linea se encuentra 
+    - `-c` = Cuenta la cantidad de veces que aparecio la palabra en el repo
+- `git log -S "Palabra"` = Me muestra todos los commits que hice y que tengan esa palabra
+
+## Crear alias solo dentro de git 
+
+> La sintaxis para crear comandos locales de git es la siguiente 
+```
+git config --global alias."Nombre del alias que quiero crear" ""Entre comillas el comando que quiero ejecutar dentro de git""
+```

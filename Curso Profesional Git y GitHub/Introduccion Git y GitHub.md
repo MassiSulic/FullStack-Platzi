@@ -69,6 +69,7 @@
 >Al crear una nueva rama se copia el último commit en esta nueva rama. Todos los cambios hechos en esta rama no se reflejarán en la rama master hasta que hagamos un merge.
 
 - `git branch "Nombre de la branch"` = Crea una nueva rama.
+- `git branch -d "Nombre de la rama"` = Va a borrar la rama especificada.
 - `git checkout "Rama especificada"` = Se mueve a la rama especificada.
 - `git merge "Rama con la que se va a fusionar"` = Fusiona la rama actual con la rama especificada y produce un nuevo commit de esta fusión.
     - Hay que tener en cuenta que el merge hay que hacerlo en la branch que queremos traer los cambios, es decir el HEAD tiene que estar apuntando a la branch que va a recibir los commits. Por ejemplo, si yo quiero que la rama x se fusione con la rama main tengo que estar en la rama main, porque si no el main va a pasar a ser la rama x
@@ -206,3 +207,52 @@ La realidad es que Git es una poderosa herramienta para controlar las versiones 
 [Como generar una clave ssh en Mac](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 
 [Como agregar la clave ssh a GitHub](https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
+
+## Pull Request
+
+> Basicamente los pull request son pausas antes del merge tipico de Git, teniendo en cuenta que seamos colaboradores del proyecto y no usuarios normales tratando de aportar en un proyecto opensourse. Por ende los pull request son una forma ordenada de hacer merge y saber bien si hay conflictos o esta todo bien para hacer el pull request
+
+## Fork
+
+> Los forks o bifurcaciones son una característica única de GitHub en la que se crea una copia exacta del estado actual de un repositorio directamente en GitHub. Este repositorio podrá servir como otro origen y se podrá clonar (como cualquier otro repositorio). En pocas palabras, lo podremos utilizar como un nuevo repositorio git cualquiera
+
+> Un fork es como una bifurcación del repositorio completo. Comparte una historia en común con el original, pero de repente se bifurca y pueden aparecer varios cambios, ya que ambos proyectos podrán ser modificados en paralelo y para estar al día un colaborador tendrá que estar actualizando su fork con la información del original.
+
+> Al hacer un fork de un poryecto en GitHub, te conviertes en dueñ@ del repositorio fork, puedes trabajar en este con todos los permisos, pero es un repositorio completamente diferente que el original, teniendo solamente alguna historia en común (como crédito al creado o creadora original).
+
+> Los forks son importantes porque es la manera en la que funciona el open source, ya que, una persona puede no ser colaborador de un proyecto, pero puede contribuír al mismo, haciendo mejor software que pueda ser utilizado por cualquiera.
+
+### Comandos
+
+Para actualizar o tener un apuntador al repo que hicimos fork y asi estar siemore actualizados con main del proyecto podemos agregar un `upstream` o remoto adicional para poder hacer `pull` directamente del repo del proyecto opensourse
+
+- `git remote add <nombre_del_remoto> <url_del_remoto>`
+    Ej: `git remote upstream https://github.com/freddier/hyperblog`
+
+Al crear un remoto adicional, podremos hacer pull desde el nuevo origen. En caso de tener permisos, podremos hacer fetch y push.
+
+- `git pull <remoto> <rama>`
+    Ej: `git pull upstream master`
+
+Este pull nos traerá los cambios del remoto, por lo que se estará al día en el proyecto. El flujo de trabajo cambia, en adelante se estará trabajando haciendo pull desde el upstream y push al origin para pasar a hacer pull request.
+
+- `git pull upstream master`
+- `git push origin master`
+
+> Ver referencia de imagen `Como funcionan los Forks`
+
+## Git ignore
+
+> No todos los archivos que agregas a un proyecto deberían ir a un repositorio. Por ejemplo, cuando tienes un archivo donde están tus contraseñas que comúnmente tienen la extensión .env o cuando te estás conectando a una base de datos; son archivos que nadie debe ver.
+
+> Por diversas razones, no todos los archivos que agregas a un proyecto deberían guardarse en un repositorio. Esto es porque hay archivos que no todo el mundo debería de ver, y hay archivos que al estar en el repositorio ralentizan el proceso de desarrollo (por ejemplo: los binary large objects, blob, que tardan en descargarse).
+
+> Para que no se suban estos archivos no deseados se puede crear un archivo con el nombre .gitignore en la raíz del repositorio con las reglas para los archivos que no se deberían subir: [Aquí](https://git-scm.com/docs/gitignore) puedes ver la sintaxis.
+
+## .Md "Markdown"
+
+En el siguiente enlace encontraremos todo lo que podemos hacer con *Markdown* [Link](https://pandao.github.io/editor.md/en.html)
+
+## GitHub pages
+
+Dejo el link que nos explica como montar nuestro github pages, [link](https://pages.github.com/)

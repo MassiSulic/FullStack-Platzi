@@ -146,7 +146,6 @@ La realidad es que Git es una poderosa herramienta para controlar las versiones 
 - `git log -p` = Explica el número de líneas que se cambiaron y te muestra que se cambió en el contenido.
 - `git shortlog` = Indica que commits ha realizado un usuario, mostrando el usuario y el título de sus commits.
 - `git log --graph --oneline --decorate` = Muestra mensajes personalizados de los commits.
-- ``
 
 *Comandos para ver historico de commits con filtro de fecha, usuarios, archivos*
 

@@ -21,7 +21,7 @@ El problema es que el navegador no entiende todo lo que nosotros escribimos, por
 ## Anatonia de un archivo HTML
 
 > Un documento html es una construccion de elementos, cadaelemento esta compuesto principalmente por:
-
+---
 ```
 Etiquetas como lo pueden ser <h1> (Abierto) </h1> (Cerrado)
 
@@ -29,12 +29,13 @@ y El contendio que hay en esa etiqueta, ej: <h1>Platzi</h1>
 ```
 
 > Ademas las etiquetas que componen los elementos pueden tener atributos ej:
+---
 ```
 <h1 class = "title"> siendo <h1 (La etiqueta) class (El atributo) = "title" (El valor del atributo)>
 ```
 
 > Por otro lado podemos colocar etiquetas identadas para que podamos leer mejor el documento ej:
-
+---
 ```
 <head>
 
@@ -115,3 +116,47 @@ Las etiquetas de la semantica del html son:
 4. `<footer>: define un pie de página o de sección.`
 5. `<article>: define un artículo, el cual puede tener su propio encabezado, navegación, sección o pie de página.`
 
+## Etiquetas mas usadas HTML
+
+### Layout o diseño
+
+- `<header>` = 
+- `<nav>` = 
+- `<section>` = 
+- `<article>` = 
+- `<aside>` = 
+- `<footer>` = 
+
+### Enlaces
+
+- `a` =
+
+### Textos
+
+- `<h1> ... <h6>` = 
+- `p` = 
+- `span` = 
+
+### Imagenes y video
+
+- `img` = 
+- `svg` = 
+- `iframe` = 
+- `video` = 
+
+### Formularios
+
+- `fomr` = 
+- `input` = 
+- `label` = 
+- `button` = 
+
+### Listas
+
+- `ul` =
+- `li` = 
+- `ol` = 
+
+> Hay que tener en cuenta que no todos las estiquetas son semanticas, esto quiere decir que no todas las etiquetas tienen importancia para los motores de busqueda, lo que significa que no importa si ponemos ciertas etiquetas o no no se van a tomar en cuenta 
+
+> En el siguiente [Enlace](https://htmlreference.io/) Vamos a poder encontrar la referencia a las etiquetas HTML mas usadas jutno con el tipo de etiquetas que son

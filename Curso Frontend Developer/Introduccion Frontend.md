@@ -20,19 +20,20 @@ El problema es que el navegador no entiende todo lo que nosotros escribimos, por
 
 ## Anatonia de un archivo HTML
 
-Un documento html es una construccion de elementos, cadaelemento esta compuesto principalmente por:
+> Un documento html es una construccion de elementos, cadaelemento esta compuesto principalmente por:
+
 ```
 Etiquetas como lo pueden ser <h1> (Abierto) </h1> (Cerrado)
 
 y El contendio que hay en esa etiqueta, ej: <h1>Platzi</h1>
 ```
 
-Ademas las etiquetas que componen los elementos pueden tener atributos ej:
+> Ademas las etiquetas que componen los elementos pueden tener atributos ej:
 ```
 <h1 class = "title"> siendo <h1 (La etiqueta) class (El atributo) = "title" (El valor del atributo)>
 ```
 
-Por otro lado podemos colocar etiquetas identadas para que podamos leer mejor el documento ej:
+> Por otro lado podemos colocar etiquetas identadas para que podamos leer mejor el documento ej:
 
 ```
 <head>
@@ -44,9 +45,9 @@ Por otro lado podemos colocar etiquetas identadas para que podamos leer mejor el
 </head>
 ```
 
-Y por utlimo podemos encontrar etiquetas que no necesitas un cierre `<h1> </h1>` y que simplemente se abran y se cierren sin `/` por ejemplo `<img>`
+> Y por utlimo podemos encontrar etiquetas que no necesitas un cierre `<h1> </h1>` y que simplemente se abran y se cierren sin `/` por ejemplo `<img>`
 
-## Estructura basica de un archivo html
+## Estructura basica de un archivo HTML
 
 ```
 <!DOCTYPE html>
@@ -86,4 +87,31 @@ Y por utlimo podemos encontrar etiquetas que no necesitas un cierre `<h1> </h1>`
 
 > Ademas si escribimos html:5 en vsc, por ejemplo. Automaticamente nos dara la estructura basica de un documento html 
 
+## Comentarios en HTML
+
+> Los comentarios de HTML consiste en señalar algo que se ignorará. Para establecer un comentario HTML se lo envuelve entre `<!-- y -->`, independiente de la cantidad de líneas.
+
+```
+<!-- Este es un comentario de una línea -->
+
+<!--
+Este es un comentario de varias líneas
+-->
+```
+
+## Estructura semantica HTML
+
+> La estructura semantica nos dice que los motores de busqueda de las paginas web ven nuestro html e interpretan que es lo que nosotros tenemos en nuestro siti web, por eso es importante usar las etiquetas que corresponden en cada caso, ya que por ejemplo los `<div>` para los motores de busqueda no significan nada, entonces eso va a ser que no nos posicionemos correctamente
+
+> Una buena practica es usa la estructura que todo sitio web deberia tener, que esta como referencia en las imagenes del curso donde las etiquetas que cumplen las funciones estan en el lugar correcto 
+
+> La cuestion es que hay muchas formas de estructurar la semantica, pero lo principal es usar las etiquetas donde tienen que ir que todo se estructura dentro del `<body>`
+
+Las etiquetas de la semantica del html son:
+
+1. `<header>: define el encabezado de la página (no confundir con <head>).`
+2. `<nav>: define una barra de navegación que incluye enlaces.`
+3. `<section>: define una sección de la página.`
+4. `<footer>: define un pie de página o de sección.`
+5. `<article>: define un artículo, el cual puede tener su propio encabezado, navegación, sección o pie de página.`
 

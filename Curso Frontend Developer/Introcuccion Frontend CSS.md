@@ -141,6 +141,34 @@ div ~ p{
 <p>Soy un párrafo</p>
 ```
 
+## Pseudoclase y Pseudoelemento
 
+> La diferencia entre uno y otro, ademas de que se usan para distintas cosas, es que las `Pseudoclases` de escriben solo con `:` mientras que los `Pseudoelementos` se escriben con `::`
+
+### Pseudoclases
+> La sintaxis de las Pseudoclases es la siguiente:
+```
+selector : pseudoclase { 
+    propiedad: valor;
+}
+```
+
+- `:hover` = Representa el estado en el cual el cursor está encima del elemento.
+- `:active` = Representa el estado de un elemento que no ha sido visitado.
+- `:visited` = Representa el estado de un elemento que ya ha sido visitado.
+- `:not()` = Representa el estado en el cual no coinciden los selectores que se indiquen.
+- `:nth-child()` = Representa el estado en el cual coinciden los hijos del elemento según el valor indicado.
+
+### Pseudoelementos
+> Y la sintaxis de los pseudo elementos es la siguiente:
+```
+selector :: pseudo-elemento { 
+    propiedad: valor;
+}
+```
+
+- `::before` = Sirve para agregar un contenido antes del elemento. El contenido es agregado mediante la propiedad content de CSS.
+- `::after` = Sirve para agregar un contenido después del elemento. El contenido es agregado mediante la propiedad content de CSS.
+- `::firt-letter` = Sirve para añadir estilos a a la primera letra del texto de cualquier elemento.
 
 

@@ -158,6 +158,13 @@ selector : pseudoclase {
 - `:visited` = Representa el estado de un elemento que ya ha sido visitado.
 - `:not()` = Representa el estado en el cual no coinciden los selectores que se indiquen.
 - `:nth-child()` = Representa el estado en el cual coinciden los hijos del elemento según el valor indicado.
+    - `Formula` = Fórmula matemática: An+B donde A y B son números enteros.
+    - `Ej:` 
+    ```
+    .container .item:nth-child(2n + 1) {
+            background-color: aqua;
+        }
+    ```
 
 ### Pseudoelementos
 > Y la sintaxis de los pseudo elementos es la siguiente:
@@ -198,4 +205,47 @@ El tema de los selectores ya lo conoces, por lo tanto, los selectores de tipo ID
 
 En un proyecto deberías evitar los !important y estilos en línea, para trabajar únicamente con la especificidad de los selectores. Sin embargo, debes tener presente que los selectores combinadores suman la especificidad de cada selector básico para obtener la especificidad total de la regla CSS.
 
-*Ver imagen de referencie * 
+*Ver imagen de referencie* 
+
+## Tipos de display mas usados
+
+> La propiedad display establece el tipo de visualización de los elementos HTML sin afectar el flujo normal de los elementos. Esto quiere decir que todos los elementos que usemos en HTML tienen una visualizacion por defecto y se ven diferente e interactuan diferente segun sea a la hora de visualizar
+
+- `visualizacion en bloque (block)` = El display block **establece que un elemento ocupará todo el espacio disponible por defecto y el siguiente elemento a este se situará por debajo. Es posible añadir medidas de anchura width y altura height a estos a elementos. También es posible agregar todas las propiedades del modelo de caja.
+- `visualizacion en linea (inline)` =  El display inline establece que un elemento ocupará el espacio del contenido del mismo y el siguiente elemento se situará a la derecha. No es posible añadir medidas de anchura width y altura height a estos a elementos. También, no es posible agregar todas las propiedades del modelo de caja, únicamente funcionará la propiedad margin en el eje horizontal.
+- `visualizacion de bloque y linea (inline-block)` = El display inline-block combina las ventajas de bloque de colocar medidas al elemento y propiedades del modelo de caja correctamente; con las ventajas de inline de color un elemento seguido de otro en el mismo espacio. Si elemento excede el contenido total, se coloca en la siguiente línea por debajo.
+- `visualizacion nula (none)` = El display none desactiva la visualización de un elemento, como si el elemento no existiera.
+
+## FlexBox
+
+> Flexbox consiste en el ordenamiento de elementos hijos en un solo eje, por defecto horizontalmente. El elemento padre o contenedor deberá contener la propiedad display con el valor flex. A partir de aquí, ya puedes ordenar los hijos según sea necesario.
+
+> Como regla la propiedad de CSS `display: flex;` tiene que ir solo en los contenedores padre, si no tiene otros contenedores anidados no va esta propiedad
+
+*Bibliografia muy util [Link](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)*
+
+> La bibliografia anterior es fundamental ya que me premite estructurar un monton de cosas con FLexBox
+
+## Grid 
+
+> Grid consiste en el ordenamiento de elementos hijos en dos ejes, como si fuera una cuadrícula o tabla. El elemento padre o contenedor deberá contener la propiedad display con el valor grid y debes definir las medidas de las columnas y de las filas. A partir de aquí, ya puedes ordenar los hijos según sea necesario.
+
+*Bibliografia muy util [Link](https://css-tricks.com/snippets/css/complete-guide-grid/)*
+
+> La bibliografia anterior es fundamental ya que me premite estructurar un monton de cosas con Grid
+
+## Unificacion de Grid y FlexBox
+
+Basicamente los dos nos permiten ordenar en la pantalla los elementos que nosotros hayamos establecido con CSS, en el caso de `FlexBox` Fue pensado para la organizacion en 2D o solo filas y columnas, mientras que `Grid` esta mas pensado para ambientes 3D cuadriculas. 
+
+.
+En FlexBox se organiza los items por medio de especificar donde queremos cada elemento con nombre, y ya se encarga el programa de ubicarlo deonde lo queremos. 
+
+. 
+Mientras que Grid trabaja por cuadricula, y lo que hacemos es establecer una cuadricula y elinear los elementos en esa cuadricula.
+
+.
+Una buena metodologia de trabajo puede ser la de organizar toda nuestra pagina web con Grid ya que permite ordenarla mejor por las cuadriculas, pero a la hora de trabajar con cosas mas chicas utilizar FlexBox ya que nos permite hacer menos calculos y trabajos mas precisos.
+
+.
+Para ver los ejemplos buscar en los archivos `/Curso Frontend Developer/FrontendPractice/DisplayB.html` para FlexBox y `/Curso Frontend Developer/FrontendPractice/DisplayBB.html` para Grid

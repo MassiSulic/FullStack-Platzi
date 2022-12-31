@@ -171,4 +171,31 @@ selector :: pseudo-elemento {
 - `::after` = Sirve para agregar un contenido después del elemento. El contenido es agregado mediante la propiedad content de CSS.
 - `::firt-letter` = Sirve para añadir estilos a a la primera letra del texto de cualquier elemento.
 
+## Cascada y especificidad en CSS
 
+> Hojas de estilos en cascada o CSS tiene ese nombre ya que se debe a la forma en que estilizamos los elementos de HTML, ya que al abrir las `{}` lo que hacemos es ir poniendo los estilos en uno debajo del otro
+
+> Hay que tener en cuenta que a la hora de ir poniendo varios elementos que hagan referencia a lo mismo, los elementos que prevaleceran seran los que estan mas abajo, ya que los que estan abajo sobre escriben a los elementos que estan en la parte superior
+
+> La especificidad consiste en dar un valor a una regla CSS sobre qué tan específico es el estilo, esto para que los navegadores puedan saber qué estilos aplicar sobre otros, independientemente de dónde se encuentren en el código. El estilo se aplicará donde la especificidad sea mayor.
+
+### Tipos de especificidad
+
+- `!important` = La palabra reservada !important es un valor de toda propiedad CSS que provee una especificidad de 10000, por lo que se aplicará ante otros estilos. Esto es una mala práctica y no deberías utilizarlo.
+```
+h1 {
+    color: red !important;
+}
+```
+
+- `estilos en linea` = Los estilos en línea son las propiedades CSS escritas en el HTML a través de la propiedad style de toda etiqueta. También es una mala práctica y debes evitarlo.
+```
+<h1 style="color: blue;">Especificidad</h1>
+```
+
+- `Especificidad en selectores` = Especificidad en selectores
+El tema de los selectores ya lo conoces, por lo tanto, los selectores de tipo ID son más específicos que las clases, atributos y pseudoclases. Estas últimas son más específicas que los elementos y pseudoelementos. El selector universal tiene una especificidad de 0.
+
+En un proyecto deberías evitar los !important y estilos en línea, para trabajar únicamente con la especificidad de los selectores. Sin embargo, debes tener presente que los selectores combinadores suman la especificidad de cada selector básico para obtener la especificidad total de la regla CSS.
+
+*Ver imagen de referencie * 

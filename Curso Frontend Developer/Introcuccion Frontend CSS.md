@@ -249,3 +249,18 @@ Una buena metodologia de trabajo puede ser la de organizar toda nuestra pagina w
 
 .
 Para ver los ejemplos buscar en los archivos `/Curso Frontend Developer/FrontendPractice/DisplayB.html` para FlexBox y `/Curso Frontend Developer/FrontendPractice/DisplayBB.html` para Grid
+
+## Colapso de margenes
+
+> El colapso de márgenes sucede cuando dos elementos bloque adyacentes tienen un determinado valor de margin, entonces estos márgenes se solapan en un solo valor, el mayor de ambos.
+
+> En flexbox y grid no ocurre el colapso de márgenes. Cuida los márgenes que colocas en los elementos de tipo bloque.
+
+Basicamente, en los elementos de tipo bloque que tienen un valor de margin y que estan adyacentes uno del otrolos margenes que establecimos se colapasn en uno solo, pero si esos bloques los contenemos en otro bloque y en ese otro bloque usamos flex o grid cada margen va a ser individual, ej:
+
+.
+Si tengo dos div con un margin de 20px, estos se van a combinar o colapsar para que efectivamente tenga un margen de 20 px entre los dos.
+Pero si tengo esos dos bloques contenidos en otro bloque y ese bloque tiene grid o flex ya los margenes no se van a superponer, si no que se van a respetar, lo que significa que si antes mis dos bloques los separaba 20px ahora los van a separar 40px.
+
+
+

@@ -362,3 +362,143 @@ Para ver todas las propiedades de CSS: [Link](https://cssreference.io/)
 - `color` = establece el color del texto.
 - `border-radius` = propiedad que establece bordes redondeados.
 
+## Unidades de medida
+
+> Las unidades de medida establecen una longitud para un determinado elemento o tipografía. Existen dos tipos de medidas: absolutas y relativas.
+
+### Unidades de medidas absolutas
+
+> Las medidas absolutas son valores fijos, por lo que la medida no cambiará. La unidad absoluta más utilizada son los píxeles px, las demás son muy poco utilizadas, pero es bueno que las conozcas.
+
+### Unidades de medidas relativas
+
+> Las medidas relativas son valores variables, por lo que la medida depende de un valor externo. Se debe tener en cuidado con estas porque un pequeño cambio puede desencadenar tamaños muy elevados.
+
+### Diferencia entre rem y em
+
+> La medida em depende del elemento que lo contiene, es decir, si un elemento tiene font-size de 20px, el valor de em es igual a 20px, el valor de 2em será de 40px y así sucesivamente.
+
+> La medida rem depende del elemento raíz, el valor del font-size del elemento raíz es de 16px, por lo tanto, el valor de 2rem es igual a 32px, y así sucesivamente.
+
+### Diferencia entre porcentajes y la anchura y altura de la pantalla
+
+> Los porcentajes representan el tamaño con respecto al total del elemento padre. Si el elemento padre tiene 20px, entonces el 100% será de 20px.
+
+> Por otra parte, las medidas de anchura vw y altura vh representan el tamaño con respecto al total de la pantalla. Si el elemento tiene un tamaño de 100vw será el 100 por ciento de la pantalla.
+
+> Si un elemento tiene todo el tamaño de la pantalla, entonces solamente en ese punto la medida 100% será igual a 100vw o 100vh.
+
+### Problema con las medidas de texto
+
+> Los navegadores tienen una opción para cambiar el tamaño del texto. Con medidas absolutas, el tamaño de la letra no cambiará, por lo que será un problema para el usuario.
+
+> Con medidas relativas, el tamaño cambiará con respecto a la fuente del elemento raíz. Por lo que estas son una buena opción para solucionar este problema de accesibilidad, en específico la medida rem.
+
+> Sin embargo, la medida rem equivale a 16px y puede ser confuso mientras utilices valores altos. Por lo que vamos a cambiar el valor del elemento de la raíz para que la medida rem sea igual a 10px.
+
+> En la etiqueta `<html>` cambia el valor de la propiedad font-size a 62.5%, resultado de una regla de tres: si 16px es igual al 100% entonces cuál será el porcentaje para 10px.
+
+## Responsive Disign
+
+El diseño responsivo (Responsive Design) consiste en un conjunto de herramientas para que tu sitio se vea bien en varias medidas de pantalla, esto incluye imágenes, tipografía, internacionalización de la página y entre otros.
+
+En la actualidad, la mayoría de sitios web son visitados desde un celular, por lo que asegurarse que nuestro sitio sea responsivo para cualquier dispositivo es fundamental para optimizar las ganancias.
+
+### Que son las medidas queries
+
+> Las media queries son reglas CSS que establecen un comportamiento distinto o diferentes estilos en un cierto rango de la pantalla. Esto sirve para establecer el layout del sitio web para diferentes tipos de pantalla: escritorio, tablets y celulares.
+
+Estos son dos tipos de media querie :
+
+- `max-width / max-heigth` = establece un rango máximo para cierto comportamiento.
+- `min-width / min-heigth` = establece un rango mínimo para cierto comportamiento.
+
+Estos valores son parecidos a condicionales, mientras se cumpla la condición, aplica determinados estilos.
+
+### Estructura de la medida queri
+
+> La estructura de una media querie consiste en empezar con @media, seguido del tipo de la media querie estableciendo un rango, envolviendo las reglas CSS dentro de ese rango.
+
+```
+@media (max-width:750px){
+    div {
+        color: red;
+    }
+    p {
+        background-color: red;
+    }
+}
+```
+
+### Herramientas del desarrollador para medida queries
+
+> Para observar que los cambios se estén aplicando correctamente, las herramientas de desarrollador serán de gran ayuda.
+
+> Abre las herramientas del navegador y da clic en la opción “Toggle device tool”, aquí podrás manipular la pantalla y observar en cuántos píxeles está ocurriendo determinados estilos.
+
+> Utiliza el siguiente ejemplo para visualizar cómo cambian los estilos según la longitud de la pantalla. Puedes revisar la media querie que está en el código. Aunque solo cambien el color de dos elementos, puede estar cualquier propiedad que desees, prueba con todo.
+
+## Arquitecturas CSS y Buenas practicas
+
+Las arquitecturas CSS consisten en manejar el código CSS con una serie de reglas y patrones para facilitar su lectura, mantenibilidad y escabilidad.
+
+El código que has manejado no se asemeja a la realidad, pues deberás manejar varios cientos o miles de líneas de código. Las arquitecturas CSS se encargan de manejar una norma en el código para que cualquiera pueda añadir o quitar funcionalidad sin mucho trabajo.
+
+### Objetivos de las arquitecturas de CSS
+
+Los objetivos de las arquitecturas de CSS son:
+
+- *Ser predecible*: el código debe ser lo menos complejo posible.
+- *Reutilizable*: el código debe ser lo menos redundante, para evitar problemas con la especificidad.
+- *Mantenible*: el código debe ser lo más fácil de manejar para añadir o quitar estilos.
+- *Escalable*: el código debe ser capaz de crecer.
+
+### Buenas prácticas de las arquitecturas de CSS
+
+Las buenas prácticas de las arquitecturas de CSS son:
+
+- *Lineamientos y estándares*: definir normas en tu grupo de trabajo de cómo estará escrito el código.
+- *Documentación*: establecer una breve explicación del código y de los lineamientos, esto sirve especialmente para nuevas personas se familiaricen con lo que deben hacer.
+- *Componentes*: establecer de manera componetizada cada uno de los elementos de tu página, es decir, manejarlos por partes para después unirlos en un todo.
+
+## Metodologias a la hora de escribir codigo
+
+### Qué es CSS orientado a objetos
+
+La arquitectura OOCSS (Object Oriented CSS) consiste en separar la estructura principal y la piel o máscara.
+
+En otras palabras, consiste en tener objetos que son estructuras principales. Estos objetos estarán unidos en una máscara, donde esta será la que cambie pero manteniendo la estructura intacta.
+
+### Qué es BEM: bloque, elemento y modificador
+
+*La arquitectura BEM* (Block-Element-Modifier) es una de las más utilizadas actualmente. Consiste en manejar los elementos en clases definidas por bloques, elementos y modificadores.
+
+- *Bloque*: es la estructura principal que es contenedora de varios elementos.
+- *Elemento*: es el elemento HTML que hace referencia el contenedor.
+- *Modificador*: es un estilo específico para el elemento. Por ejemplo, un botón que tenga un color diferente a los demás, esto tiene relación con la especificidad.
+
+[Info](https://platzi.com/blog/bem/)
+
+### Qué es la arquitectura escalable y modular de CSS
+
+La arquitectura SMACSS (Scalable and Modular Architecture for CSS) indica el orden de componentes que estarán ubicados en carpetas. La unión de estos componentes dará como resultado tu página web con estilos.
+
+- *Base*: elementos base, como botones, títulos, enlaces.
+- *Layout*: estructura de la página, relacionado con el Responsive Design.
+- *Módulos*: elementos que contienen a los elementos base.
+- *Estado*: estilos relacionados con el comportamiento de elemento, relacionado con las pseudoclases y pseudoelementos.
+- *Temas*: conjunto de estilos que definen tu página web.
+
+### Qué es el triángulo invertido de CSS
+
+La arquitectura ITCSS (Inverted Triangle CSS) consiste en separar los archivos del proyecto; mediante ajustes, herramientas, elementos, entre otros. Todo esto para manejar los detalles de especificidad, claridad y magnitud.
+
+### Qué es el diseño atómico
+
+La arquitectura Atomic Design también es una de las más utilizadas actualmente. Consiste en manejar los elementos como una estructura mínima, a partir de la unión de varias de estas, dará como resultado los estilos de la página web. Se basa en la estructura mínima de la materia, los átomos.
+
+- *Átomos*: estructura mínima; como botones, enlaces, títulos, entre otros.
+- *Moléculas*: unión de átomos.
+- *Organismos*: unión de moléculas.
+- *Plantillas*: unión de organismos.
+- *Páginas*: unión de plantillas.

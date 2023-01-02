@@ -337,3 +337,28 @@ Por defecto, todos los elementos tienen un valor auto, es decir, el orden está 
 Si se establece un valor positivo, este elemento se sitúa por delante de los demás. Si se establece un valor negativo, se sitúa por detrás.
 
 Si un elemento tiene un z-index mayor a otro, estará por delante. Sin embargo, si un elemento que tiene un z-index menor a otros, sus hijos nunca estarán por encima, aunque su z-index sea mayor.
+
+## Propiedades de CSS mas usadas
+
+> Las propiedades CSS más usadas son las siguientes, separadas en secciones comunes, algunas ya las conocemos:
+
+- `Display`
+- `Margin`
+- `Padding`
+- `Border`
+- `Width`
+- `Heigth`
+- `Color`
+- `Background`
+
+Para ver todas las propiedades de CSS: [Link](https://cssreference.io/)
+
+### Propiedades para los textos
+
+- `font-size` = establece un tamaño de fuente.
+- `font-weight` = establece el resaltado del texto, con valores de 100 a 900 en intervalos de 100; donde 100 es delgada y 900 es negrita.
+- `font-family` = establece el tipo de fuente.
+- `text-align` = establece la posición del texto: right, left, center y justify.
+- `color` = establece el color del texto.
+- `border-radius` = propiedad que establece bordes redondeados.
+

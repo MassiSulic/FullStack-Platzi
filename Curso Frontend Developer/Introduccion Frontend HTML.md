@@ -160,3 +160,41 @@ Las etiquetas de la semantica del html son:
 > Hay que tener en cuenta que no todos las estiquetas son semanticas, esto quiere decir que no todas las etiquetas tienen importancia para los motores de busqueda, lo que significa que no importa si ponemos ciertas etiquetas o no no se van a tomar en cuenta 
 
 > En el siguiente [Enlace](https://htmlreference.io/) Vamos a poder encontrar la referencia a las etiquetas HTML mas usadas jutno con el tipo de etiquetas que son
+
+## Posicionamiento en CSS
+
+> El posicionamiento en CSS consiste en cómo un elemento se situará, con respecto a su elemento padre y al flujo normal del documento. El flujo normal del documento es el orden de los elementos establecidos en el HTML.
+
+> La posición del elemento se la define con la propiedad position, mediante los siguientes valores:
+- `static`
+- `relative`
+- `absolute`
+- `sticky`
+
+### Propiedades de posicion
+
+> Además de la propiedad position, existen cuatro propiedades del elemento de acuerdo a su posición con respecto a su padre, estas son: `top` (arriba), `bottom` (debajo), `left` (izquierda) y `right` (derecha).
+
+> Estos valores estarán establecidos en el padre próximo que tenga la posición relative.
+
+> Si top y bottom están definidos, top gana. Si left y rigth están definidos, left gana (dependiendo el idioma configurado).
+
+### Posicion estatica
+
+> La posición static es el valor por defecto de todo elemento HTML, consiste en respetar el flujo normal del documento donde las propiedades de posición no pueden ser establecidas.
+
+### Posicion relativa
+
+> La posición relative consiste en respetar el flujo normal del documento donde las propiedades de posición sí pueden ser establecidas.
+
+### Posicion absoluta
+
+> La posición relative consiste en respetar el flujo normal del documento donde las propiedades de posición sí pueden ser establecidas.
+
+### Posicion fija
+
+> La posición fixed consiste en quitar al elemento del flujo normal del documento y fijarlo en un lugar; donde las propiedades de posición sí pueden ser establecidas.
+
+### Posicion variable fija
+
+> La posición sticky consiste en quitar al elemento del flujo normal del documento y fijarlo en un lugar mientras su contenedor sea visible; donde las propiedades de posición sí pueden ser establecidas.

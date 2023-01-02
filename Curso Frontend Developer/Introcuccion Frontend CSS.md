@@ -262,5 +262,46 @@ Basicamente, en los elementos de tipo bloque que tienen un valor de margin y que
 Si tengo dos div con un margin de 20px, estos se van a combinar o colapsar para que efectivamente tenga un margen de 20 px entre los dos.
 Pero si tengo esos dos bloques contenidos en otro bloque y ese bloque tiene grid o flex ya los margenes no se van a superponer, si no que se van a respetar, lo que significa que si antes mis dos bloques los separaba 20px ahora los van a separar 40px.
 
+## Posicionamiento en CSS
 
+> El posicionamiento en CSS consiste en cómo un elemento se situará, con respecto a su elemento padre y al flujo normal del documento. El flujo normal del documento es el orden de los elementos establecidos en el HTML.
+
+> La posición del elemento se la define con la propiedad position, mediante los siguientes valores:
+- `static`
+- `relative`
+- `absolute`
+- `sticky`
+
+### Propiedades de posicion
+
+> Además de la propiedad position, existen cuatro propiedades del elemento de acuerdo a su posición con respecto a su padre, estas son: `top` (arriba), `bottom` (debajo), `left` (izquierda) y `right` (derecha).
+
+> Estos valores estarán establecidos en el padre próximo que tenga la posición relative.
+
+> Si top y bottom están definidos, top gana. Si left y rigth están definidos, left gana (dependiendo el idioma configurado).
+
+### Posicion estatica
+
+> La posición static es el valor por defecto de todo elemento HTML, consiste en respetar el flujo normal del documento donde las propiedades de posición no pueden ser establecidas.
+
+### Posicion relativa
+
+> La posición relative consiste en respetar el flujo normal del documento donde las propiedades de posición sí pueden ser establecidas.
+
+### Posicion absoluta
+
+> La posición relative consiste en respetar el flujo normal del documento donde las propiedades de posición sí pueden ser establecidas.
+
+> Elemento padre más próximo con posición relativa
+>El elemento con posición absoluta se desplazará arriba, abajo, izquierda o derecha con respecto al elemento padre más próximo con posición relativa.
+
+>Si no existe un padre con posición relativa de un elemento con posición absoluta, este se desplazará con respecto al elemento raíz del documento.
+
+### Posicion fija
+
+> La posición fixed consiste en quitar al elemento del flujo normal del documento y fijarlo en un lugar; donde las propiedades de posición sí pueden ser establecidas.
+
+### Posicion variable fija
+
+> La posición sticky consiste en quitar al elemento del flujo normal del documento y fijarlo en un lugar mientras su contenedor sea visible; donde las propiedades de posición sí pueden ser establecidas.
 

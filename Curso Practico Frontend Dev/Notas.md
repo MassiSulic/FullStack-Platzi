@@ -29,3 +29,12 @@ Basicamente todo esto hay que planearlo antes asi nuestro sitio web queda profes
 
 A continuacion hay una pagina web con todas las reglas que podriamos seguir para hacer paginas web estandares [Link](https://polaris.shopify.com/design/design)
 
+## Como ordenar estilos
+
+Cuando vamos a dar estilos en css para seguir una metodologia ordenada y legible podemos seguir estos pasos:
+
+1. Posicionamiento
+2. Modelo de caja
+3. Tipografia
+4. Visuales
+5. Otros

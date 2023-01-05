@@ -38,3 +38,31 @@ Cuando vamos a dar estilos en css para seguir una metodologia ordenada y legible
 3. Tipografia
 4. Visuales
 5. Otros
+
+## Propiedades para centrar
+
+- `text-align: center` = La propiedad text-align puede aplicarse a elementos de nivel bloque (P, H1, etc.) para dar la alineación del texto del elemento. Esta propiedad es similar en función al atributo ALIGN de HTML en párrafos, encabezados y divisiones.
+
+- `justify-self: center` = https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self
+
+- `justify-content: center` = https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+
+> La clave para entender los justify es que el de content modifica el contenido, mientras que el de self se modifica a si mismo (Es decir al mismo elemento que estamos modificando y no a todos)
+
+## Position 
+
+- Static: posición por defecto de los elementos.
+Es el único caso en el que no se puede utilizar top, right, bottom ni left.
+
+- Absolute: los elementos permanecen en la posición donde fueron colocados, pero pierden su espacio físico, es decir, se sobreponen en otros elementos. Aclaración: para poder aplicar este valor, el contendor padre debe tener position relative.
+
+- Relative: conservan su posición original y espacio físico, pero podemos moverlos con las propiedades top, right, bottom, y left.
+
+- Fixed: pierden su espacio físico y permanecen de forma fija.
+
+- Sticky: conservan su espacio físico, pero cuando el scroll los alcanza lo siguen - sin perder dicho espacio físico.
+Es muy usado para barras de navegación.
+
+- Initial: vuelve el position de un elemento a como estaba originalmente.
+
+- Inherit: hereda el position de su padre.

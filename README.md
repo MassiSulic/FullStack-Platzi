@@ -10,4 +10,3 @@ Empece el `19/12/22` con el curso *Desarrollador FullStack* y *Seguridad Informa
 
 ## Realidad
 
-Estoy bastante desmotivado por todas las cosas que tengo que hacer adeamas del curso, pero no voy a dejar que el desanimo me venza. 

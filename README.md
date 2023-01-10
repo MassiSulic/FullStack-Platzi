@@ -10,3 +10,4 @@ Empece el `19/12/22` con el curso *Desarrollador FullStack* y *Seguridad Informa
 
 ## Realidad
 
+Mañana me pongo a full con programacion

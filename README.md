@@ -10,4 +10,4 @@ Empece el `19/12/22` con el curso *Desarrollador FullStack* y *Seguridad Informa
 
 ## Realidad
 
-voy q lograr seguir, en unos dias empiezo con javascript
+voy q lograr seguir, en unos diasbunesas  empiezo con javascript

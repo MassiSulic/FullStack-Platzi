@@ -1,3 +1,5 @@
+// Ejercicio 1
+
 function solution(valor) {
 
     console.log(typeof valor);
@@ -6,3 +8,9 @@ function solution(valor) {
   }
   
   solution(true);
+
+  // Ejercicio 2
+
+  export function solution(secreto) {
+    return (secreto > 5);
+  }

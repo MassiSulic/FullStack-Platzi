@@ -103,3 +103,5 @@ Cuando hablamos de valores verdaderos o falsos js tienen por defectos los valore
 - `!` = NOT, niega un valor.
 - `&&` = AND, compara dos valores si los dos son ciertes es true y los demas ejemplos.
 - `||` = OR, Compara dos valores y si uno es verdadero entonces es true la operacion.
+
+

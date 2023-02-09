@@ -120,3 +120,24 @@ switch (numero) {
         console.log("No soy nada!");
 }
 ```
+
+## Arrays
+
+Un array es una lista donde se pueden agregra datos en js. Para crear un array usamos los [] y la sintaxis para crear un array seria la siguiente:
+Cabe aclarar que en programacion todas las cuentas inician desde el 0, eso significa que en los arrays para acceder a su contenido partimos del elemento 0.
+
+```
+var (Nombre de mi variable) = [Contenido del Array];
+```
+
+### Metodos del objeto array mas utiles
+
+- `.length` = Me dice el largo de mi array.
+- `(Nombre de mi array)[Numero]` = Me permite acceder al elemento que estoy especificando.
+- `.push` = Me agrega elemento al final de mi array, ej:
+    var masFrutas = frutas.push("Uvas");
+- `.pop` = Me quita el ultimo elemento de mi array, ej:
+    var quito = frutas.pop("Uvas");
+- `.unshift` = Me agrega un elemento al principio de mi array.
+- `.shift` = Elimina el elemento que se encuentre primero en mi array.
+- `.indexOf()` = Me dice la posicion en la que se encuntra el elemento especificado.

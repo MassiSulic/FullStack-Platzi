@@ -15,7 +15,7 @@ function solution(valor) {
     return (secreto > 5);
   }
 
-  // Ejercicos 3
+  // Ejercico 3
 
 export function solution(article) {
 
@@ -37,3 +37,15 @@ export function solution(article) {
       console.log("Artículo no encontrado")
   }
 }
+
+// Ejercicio 4
+
+export function solution(arraySecreto) {
+  
+  var comparacion = typeof(arraySecreto[0]);
+  var resultado = comparacion === "string" ? true : false;
+  return(resultado);
+}
+
+solution(["Huevo", "Gallina", "Vaca"])
+solution([1, "Gallina", "Vaca"])

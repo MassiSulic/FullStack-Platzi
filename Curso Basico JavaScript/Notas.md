@@ -106,7 +106,7 @@ Cuando hablamos de valores verdaderos o falsos js tienen por defectos los valore
 
 ## Switch
 
-El switch funciona igual que el if, else if y else. Con la diferencia de que el swift valida casos y no especificamente lo que necesitemos. Es importante tener en cuenta que tiene su propia sintaxis y que un ejemplo puede ser el siguiente:
+El switch funciona igual que el if, else if y else. Con la diferencia de que el switch valida casos y no especificamente lo que necesitemos. Es importante tener en cuenta que tiene su propia sintaxis y que un ejemplo puede ser el siguiente:
 
 ```
 var numero = 1

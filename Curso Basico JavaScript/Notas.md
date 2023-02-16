@@ -143,7 +143,17 @@ var (Nombre de mi variable) = [Contenido del Array];
 - `.indexOf()` = Me dice la posicion en la que se encuntra el elemento especificado.
 
 
-## ${}
+## For
 
-Cuando llamamos a una variable dentro de una funcion y queremos despues recorrer ese array que tenemos de funcion, para que funcione esta llamada: 
-"${}" Tenemos que poner las comillas invertidas `` Porque si no no funciona.
+> Cuando llamamos a una variable dentro de una funcion y queremos despues recorrer ese array que tenemos de funcion, para que funcione esta llamada: 
+> "${}" Tenemos que poner las comillas invertidas `` Porque si no no funciona.
+
+El loop for consta de 3 partes:
+
+- Inicio: se debe inicializar una variable que será evaluada en la expresión a comparar. Esta variable puede ser declarada dentro o fuera de la condición.
+
+- Comparación: es una expresión que debe cumplir la variable inicial, cuando no se cumpla, el ciclo termina.
+
+- Pasos: son los intervalos que cambiará la variable inicial, mientras cumpla con la expresión de comparación.
+
+Donde basicamente lo que hacemos es declaramos la variable que vamos a evaluar, hacemos la evaluacion con algun operador y ponemos algun control para que acabe en algun momento.

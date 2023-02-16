@@ -157,3 +157,15 @@ El loop for consta de 3 partes:
 - Pasos: son los intervalos que cambiará la variable inicial, mientras cumpla con la expresión de comparación.
 
 Donde basicamente lo que hacemos es declaramos la variable que vamos a evaluar, hacemos la evaluacion con algun operador y ponemos algun control para que acabe en algun momento.
+
+## Objetos
+
+Para acceder a los valores de mi objeto uso la siguiente sintaxis:
+
+- miAuto.marca = Siendo que el ".(Algo)" me va a devolver lo que contiene ese algo
+
+Por otra parte para entender mejor los dos tipo de datos que me puedo encontrar en los obejtos lo puedo ver de la siguiente manera:
+
+las caracteristicas de mo objeto como el modelo, la marca o el annio se les llama `Atributos`.  
+
+Mientras que las acciones que yo puedo realizar con ese objeto, que pueden ser funciones como conducir, o vender se les llama `Metodos`.

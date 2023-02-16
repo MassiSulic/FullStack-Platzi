@@ -141,3 +141,9 @@ var (Nombre de mi variable) = [Contenido del Array];
 - `.unshift` = Me agrega un elemento al principio de mi array.
 - `.shift` = Elimina el elemento que se encuentre primero en mi array.
 - `.indexOf()` = Me dice la posicion en la que se encuntra el elemento especificado.
+
+
+## ${}
+
+Cuando llamamos a una variable dentro de una funcion y queremos despues recorrer ese array que tenemos de funcion, para que funcione esta llamada: 
+"${}" Tenemos que poner las comillas invertidas `` Porque si no no funciona.

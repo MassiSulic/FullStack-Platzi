@@ -25,6 +25,7 @@ function auto (MARCA, MODELO, ANNIO){
     this.modelo = MODELO;
     this.annio = ANNIO;
   }
+  
   var autos = [];
   for(let i = 0 ; i < 2 ; i++){
     var marca = prompt("Ingresa la marca del auto ");

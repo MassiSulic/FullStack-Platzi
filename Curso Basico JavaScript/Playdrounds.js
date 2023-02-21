@@ -49,3 +49,16 @@ export function solution(arraySecreto) {
 
 solution(["Huevo", "Gallina", "Vaca"])
 solution([1, "Gallina", "Vaca"])
+
+
+export function solution(cars) {
+  // 👇 Este es el código que no funcionaba porque sol devolvia la primera coincidencia
+  // para solucionarlo habia que cambiar el find por el filter
+  return cars.filter(function (car) {
+    if (car.licensePlate) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+}

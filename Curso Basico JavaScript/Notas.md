@@ -169,3 +169,56 @@ Por otra parte para entender mejor los dos tipo de datos que me puedo encontrar 
 las caracteristicas de mo objeto como el modelo, la marca o el annio se les llama `Atributos`.  
 
 Mientras que las acciones que yo puedo realizar con ese objeto, que pueden ser funciones como conducir, o vender se les llama `Metodos`.
+
+
+## Métodos de recorridos de Arrays
+
+Existen métodos de arrays para recorrerlos, y devolver un valor o un array con nuevos resultados. Entre estos están dos muy importantes: map y filter.
+
+Utilizaremos el siguiente array de objetos para los ejemplos de los métodos:
+
+```
+var articulos = [
+{ nombre: "Bici", costo: 3000 },
+{ nombre: "TV", costo: 2500 },
+{ nombre: "Libro", costo: 320 },
+{ nombre: "Celular", costo: 10000 },
+{ nombre: "Laptop", costo: 20000 },
+{ nombre: "Teclado", costo: 500 },
+{ nombre: "Audifonos", costo: 1700 },
+];
+```
+Ejemplo con .filter
+```
+var articulosFiltrados = articulos.filter(function (articulo) {
+  return articulo.costo <= 500
+})
+
+console.log(articulosFiltrados)
+/* [
+  { nombre: 'Libro', costo: 320 },
+  { nombre: 'Teclado', costo: 500 }
+] */
+```
+Ejemplo con .map
+```
+var nombreArticulos = articulos.map(function (articulo) {
+    return articulo.nombre
+});
+
+console.log(nombreArticulos)
+```
+
+## Otros metodos para recorrer los arryas
+
+- find() : Devuelve el primer elemento del array que cumpla con la condición dada
+
+- foreach() : Ejecuta lo que le definamos una vez por cada elemento de nuestro array
+
+- some() : Comprueba si al menos un elemento del array cumple con la condición que le damos
+
+- filter() : Devuelve todos los elementos del array que cumplan con la condición dada
+
+- El método .push() nos permite agregar uno o más elementos al final de un array. A continuación veremos un ejemplo aplicado con un array que contiene números:
+
+- .shift() eliminar el primer elemento de un array, es decir, elimina el elemento que esté en el índice 0.

@@ -14,13 +14,13 @@ var Hola
 var Hola = Chau
 
 /* Sumar numero es realizar una operacion matematica gracias al lenguaje, mientras que concatenar strings
-es simplemente sumar dos textos */
+es simplemente unir dos textos */
 
 // Sumar numeros 👇, en este caso el resultado seria 2
 console.log(1 + 1)
 
 // Concatenar strings 👇, y en este caso el resultado seria 11, porque en el anterior estoy haciendo una
-// suma matematica, mientras que en este caso estoy sumando dos textos
+// suma matematica, mientras que en este caso estoy uniendo dos textos
 console.log("1" + "1")
 
 // Para sumer o concatenar uso el mismo operador +
@@ -29,40 +29,40 @@ console.log(1 + 1, "1" + "1")
 
 // Tipo de datos (Para saber el tipo de dato en js podemos usar "typeof()" )
 
-var Nombre = "Massimo"
-console.log(typeof(Nombre))
+var nombre = "Massimo"
+console.log(typeof(nombre))
 // return: String
 
-var Apellido = "Sulic"
-console.log(typeof(Apellido))
+var apellido = "Sulic"
+console.log(typeof(apellido))
 // return: String
 
 var nombreDeUsuarioPlatzi = "MassiSulic"
 console.log(typeof(nombreDeUsuarioPlatzi))
 // return: String
 
-var Edad = 18
-console.log(typeof(Edad))
+var edad = 18
+console.log(typeof(edad))
 // return: Number
 
 var correoElectronico = "massimo.a.sulic@gmail.com"
 console.log(typeof(correoElectronico))
 // return: String
 
-var mayorDeEdad = true
-console.log(typeof(mayorDeEdad))
+var isMayorDeEdad = true
+console.log(typeof(isMayorDeEdad))
 // return: Boolean
 
-var dineroAhorrado = 10000
+var dineroAhorrado = 1000
 console.log(typeof(dineroAhorrado))
 // return: Number
 
-var Deudas = 100
-console.log(typeof(Deudas))
+var deudas = 100
+console.log(typeof(deudas))
 // return: Number
 
-console.log(Nombre, Apellido)
-console.log(dineroAhorrado - Deudas)
+console.log(nombre, apellido)
+console.log(dineroAhorrado - deudas)
 
 /* --- FUNCIONES --- */
 

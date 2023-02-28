@@ -87,21 +87,22 @@ suma(7, 4);
 
 // Ejemplo practico 👇
 
-const nombre = "Juan David";
-const apellido = "Castro Gallego";
-const nick = "juandc";
-
-function nombreCompleto() {
-    return nombre + " " + apellido
-    
+function nombreCompleto(name, lastName) {
+    return name + ' ' + lastName
 }
 
-console.log("Mi nombre es " + nombreCompleto() + ", pero prefiero que me digas " + nick + ".");
+function saludo(name, lastname, username) {
+    const completeName = nombreCompleto(name, lastname);
+    
+    console.log("Mi nombre es " + completeName + ", pero prefiero que me digas " + username + ".");
+}
+
+saludo('Massimo', 'Sulic', 'MassiSulic');
 
 /* --- CONDICIONALES --- */
 
 /* Las condicionales son estructuras de control para tomar desiciones
-es decir que son lineas de codigo que me permiten validar cosasy las puedo pensar, si esto es verdad
+es decir que son lineas de codigo que me permiten validar cosas. y las puedo pensar, si esto es verdad
 pasa esto, si no, esto otro */
 
 /* Ademas en js tenemos el operador basico que es if else, el operador ternario
@@ -109,7 +110,8 @@ y el switch */
 
 // if else, es la estructura mas basica que podemos encontrar y sirve para validar x cosa
 
-// el switch sirve para validar casos, y es mas gral. Ademas puedo validaro todos los casos que necesite
+// el switch sirve para validar casos, y es mas gral. Ademas todos los casos se comparan con la misma
+// variable o condicion que definimos en el switch.
 
 // Y el opeeador ternario es lo mismo que el la validacion if else, pero solo pudiendo validar una situacion
 
@@ -178,7 +180,7 @@ de validaciones, o infinitamente */
 /* Un ciclo infinito es un ciclo que siempre va a estar activo, 
 es decir que la condicion que le hayamos dado
 nunca va a ser falsa por ende el codigo se va a ejecutar para siempre y es un problema porque 
-al no tener un corteel codigo no va a parar nunca 
+al no tener un corte el codigo no va a parar nunca 
 y se puede saturar la maquina en la que estemos trabajando */
 
 /* Y si, puedo mezclar ciclos y condicionales a las necesidades que tenga */

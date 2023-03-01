@@ -108,7 +108,7 @@ Cuando hablamos de valores verdaderos o falsos js tienen por defectos los valore
 
 El switch funciona igual que el if, else if y else. Con la diferencia de que el switch valida casos y no especificamente lo que necesitemos. Es importante tener en cuenta que tiene su propia sintaxis y que un ejemplo puede ser el siguiente:
 
-```
+```js
 var numero = 1
 
 switch (numero) {
@@ -177,7 +177,7 @@ Existen métodos de arrays para recorrerlos, y devolver un valor o un array con 
 
 Utilizaremos el siguiente array de objetos para los ejemplos de los métodos:
 
-```
+```js
 var articulos = [
 { nombre: "Bici", costo: 3000 },
 { nombre: "TV", costo: 2500 },
@@ -189,7 +189,7 @@ var articulos = [
 ];
 ```
 Ejemplo con .filter
-```
+```js
 var articulosFiltrados = articulos.filter(function (articulo) {
   return articulo.costo <= 500
 })
@@ -201,7 +201,7 @@ console.log(articulosFiltrados)
 ] */
 ```
 Ejemplo con .map
-```
+```js
 var nombreArticulos = articulos.map(function (articulo) {
     return articulo.nombre
 });

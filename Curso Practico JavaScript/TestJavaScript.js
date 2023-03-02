@@ -222,32 +222,25 @@ console.log("¡Felicitaciones! Diste la respuesta correcta");
 
 /* --- LISTAS --- */
 
-/* Para entender que son los arrays y los objetos tenemos que definir que son los objetos en programacion:
-Para entender que son los objetos vamos a poner el ejemplo de un auto. El auto tiene adjetivos que pueden
-ser: el color y el modelo. Y tambien tiene acciones que puede realizar: ir hacia adelante y hacia atras */
+/* Un array en una lista de elementos (Hablando muy basicamente) ej: */
 
-/* Esto lo podemos traducir a la programacion de la siguiente manera: Una vez creado el obejto que en 
-este caso puede ser "Auto" (Con su respectiva sintaxis) podemos decir que tiene propiedades,
-Estas propiedases son los adjetivos del auto: Color y modelo. Pero ademas podemos decir que tiene metodos
-que son las acciones que puede realizar ese auto, como ir hacia adelante y hacia atras */
+let array = [1, `jaja`, true, false];
 
-/* Por eso podemos decir que los arrays [] son estructuras de datos de tipo objeto, es decir que pueden
-tener, propiedades y metodos. Y que sirven para almacenar una colección de elementos 
-del mismo tipo en una sola variable. Es decir un array es una forma de almacenar múltiples valores en una sola variable. */
+/* Y un objeto es una lista de elementos PERO cada elemento tiene un nombre clave (Propiedades y metodos) ej: */
 
-/* Y por otro aldo los objetos {} si estan mas enfocados a almacenar propiedades y metodos y puede ser pensado como 
-como un contenedor de información que puede ser accedida y manipulada mediante su nombre o clave.*/
+let objeto = {
+propiedad: 1,
+    propiedad1: `Hola`,
+    propiedad2: true,
+    metodo: function () {
+        console.log("Hola")
+    }
+};
 
-/* Para saber cuadno usar cada una hay que tener en cuenta dos puntos clave, 
-1) como necesito acceder a esa informacion 2) que informacion tengo que guardar
-Los objetos son mejores para guardar informacion con etiquetas estando jerarquicamente ordenada
-Mientras que los arryas son mas como listas de tareas y la informacion se estipula secuencialmente */
+/* Cuando quiero guardar informacion en distinto orden y de distinto valor sin especificar un nombre para cada valor uso arrays
+pero cuando quiero que cada valor tenga su identificador uso objetos */
 
-/* Y si, se pueden mezclar objetos con arrays y arrays con objetos. Esto puede ser util a la hora
-de consultar informacion. Por ejemplo, si tiene una lista de usuarios, 
-cada usuario puede ser representado como un objeto con sus propias propiedades 
-y almacenados en un array. Por otro lado, si necesita almacenar una matriz de datos, 
-puede utilizar un array de arrays, donde cada array interno representa una fila de datos.*/
+/* Y si Los arrays pueden guardar objetos. Y los objetos pueden guardar arrays en sus propiedades */
 
 // Ejemplos practicos:
 
@@ -259,7 +252,7 @@ let miArray2 = ["Holaa", "Massimoo", "Sulicc"]
 function funcionDeArrays(miArray) {
     console.log(miArray[0]);
 };
-
+ 
 funcionDeArrays(miArray1);
 
 //Recibe cualquier array como parametro e imprime uno por uno

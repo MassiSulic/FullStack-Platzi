@@ -5,8 +5,8 @@
 ### Que reciben las funciones?  
 
 Cuando hablamos de funciones hay dos momentos de las mismas.
-1 - Cuando las creamos. En ese momento podemos decirle a la funcion que puede esperar *Parametros*
-2 - Cuando llamamos las funciones. Ahi es cuando le pasamos esos parametros, que en el mundo de la programacion tienen el nombre de *Argumentos*
+- 1. Cuando las creamos. En ese momento podemos decirle a la funcion que puede esperar *Parametros*
+- 2. Cuando llamamos las funciones. Ahi es cuando le pasamos esos parametros, que en el mundo de la programacion tienen el nombre de *Argumentos*
 
 ### Como se forman los objetos?  
 

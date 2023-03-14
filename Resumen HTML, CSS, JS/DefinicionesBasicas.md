@@ -45,3 +45,5 @@ La propiedad *align-items* organiza los elementos hijo con respecto al elemento 
 Para organizar elementos en multilinea con flexbox uso *align-content* esta propiedad me permite gestionar como quiero que se vean los elementos hijo en multilinea. Para que la propiedad funcione tengo que establecer:
 - flex-wrap: wrap; Si no no funciona align-content
 - align-content: (Con la propiedad que quiera); Para alinear en multi linea
+  
+Si quiero editar la posicion de un solo elemento hijo de un elemento padre puedo usar la propiedad *align-self* especificando a que hijo se la quiero aplicar y teniendo en cuenta que el contenedor padre tiene que tener espacio suficiente de movimiento con *height*

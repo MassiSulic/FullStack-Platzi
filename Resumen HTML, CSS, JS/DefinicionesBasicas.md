@@ -28,3 +28,15 @@ Position es una propiedad que sirve para posicionar elementos en relacion a otro
 La posicion absolute con la relative es muy util para juntar dos elementos y posicionarlos uno en base al otro
 
 - Fixed: Es lo mismo que absolute pero no admite elementos padre, si o si es en relacion a la pagina y se queda en el lugar aunque hagamos scroll
+
+### Como funciona flexbox  
+
+FlexBox es otra herramienta para organizar de la forma que queramos los hijos de un elemento, ej: divs dentro de otro de un div.
+  
+Para que FlexBox entre en accion tenemos que asignarle al elemento padre la propiedad *display: flex;* De esta forma todos los hijos ya van a ser elementos editables.
+  
+Flex-Box usa dos ejes, el principal que es horizontal y el vertical que es secundario. Con la siguiente propiedad podemos editar esa direccion:
+Para cambair la disposicion de los elementos podemos usar *flex-direction: (propiedad)* Esto alineara por defecto los elementos hijos como le indiquemos.
+  
+Para editar como queremos que se organicen los elementos hijos dentro del elemento padre (Si queremos que esten al final, en el centro u otra disposicion) Usamos la propiedad *justify-content: (Propiedad)*
+

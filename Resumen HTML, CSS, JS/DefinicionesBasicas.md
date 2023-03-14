@@ -14,3 +14,17 @@ JavaScript está diseñado en un paradigma simple basado en objetos. Un objeto e
 
 En resumen las *Propiedades* de un objeto son variables (Clave = Valor)  
 Y las funciones se las llama *Metodos*
+
+## Definiciones CSS
+
+### Como funciona la propiedad position  
+
+Position es una propiedad que sirve para posicionar elementos en relacion a otros elementos.
+
+- Static: Es por defecto y sigue el flujo normal del documento
+- Relative: Su posicion puede ser determinada por nosotros con "top", "right", "bottom" y "left", no afecta a los demas elementos de la pagina (Se rige por el z-Index) Y se mueve en relacion a la pagina web 
+- Absolute: Asocia un elemento a su padre si lo tiene o a la pagina web. Para que sea a su padre el elemento hijo tiene que ser diferente a static, ej: relative.  
+
+La posicion absolute con la relative es muy util para juntar dos elementos y posicionarlos uno en base al otro
+
+- Fixed: Es lo mismo que absolute pero no admite elementos padre, si o si es en relacion a la pagina y se queda en el lugar aunque hagamos scroll

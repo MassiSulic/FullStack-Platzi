@@ -38,9 +38,10 @@ Para que FlexBox entre en accion tenemos que asignarle al elemento padre la prop
 Flex-Box usa dos ejes, el principal que es horizontal y el vertical que es secundario. Con la siguiente propiedad podemos editar esa direccion:
 Para cambair la disposicion de los elementos podemos usar *flex-direction: (propiedad)* Esto alineara por defecto los elementos hijos como le indiquemos.
   
-Para editar como queremos que se organicen los elementos hijos dentro del elemento padre (Si queremos que esten al final, en el centro u otra disposicion) Usamos la propiedad *justify-content: (Propiedad)*
+Para editar como queremos que se organicen los elementos hijos dentro del elemento padre (Si queremos que esten al final, en el centro u otra disposicion) Usamos la propiedad *justify-content: (Propiedad)* (Esta propiedad edita el eje principal)
+
+La propiedad *align-items* organiza los elementos hijo con respecto al elemento padre en el eje secundario, (puedo darle cualquier posicion para que se alinea al principio medio o final).
 
 Para organizar elementos en multilinea con flexbox uso *align-content* esta propiedad me permite gestionar como quiero que se vean los elementos hijo en multilinea. Para que la propiedad funcione tengo que establecer:
-- display: flex; Para que trabajemos con esta propiedad
 - flex-wrap: wrap; Si no no funciona align-content
 - align-content: (Con la propiedad que quiera); Para alinear en multi linea

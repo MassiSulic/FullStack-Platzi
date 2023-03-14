@@ -40,3 +40,7 @@ Para cambair la disposicion de los elementos podemos usar *flex-direction: (prop
   
 Para editar como queremos que se organicen los elementos hijos dentro del elemento padre (Si queremos que esten al final, en el centro u otra disposicion) Usamos la propiedad *justify-content: (Propiedad)*
 
+Para organizar elementos en multilinea con flexbox uso *align-content* esta propiedad me permite gestionar como quiero que se vean los elementos hijo en multilinea. Para que la propiedad funcione tengo que establecer:
+- display: flex; Para que trabajemos con esta propiedad
+- flex-wrap: wrap; Si no no funciona align-content
+- align-content: (Con la propiedad que quiera); Para alinear en multi linea

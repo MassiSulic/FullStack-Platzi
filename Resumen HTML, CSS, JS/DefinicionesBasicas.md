@@ -25,7 +25,7 @@ Position es una propiedad que sirve para posicionar elementos en relacion a otro
 - Relative: Su posicion puede ser determinada por nosotros con "top", "right", "bottom" y "left", no afecta a los demas elementos de la pagina (Se rige por el z-Index) Y se mueve en relacion a la pagina web 
 - Absolute: Asocia un elemento a su padre si lo tiene o a la pagina web. Para que sea a su padre el elemento hijo tiene que ser diferente a static, ej: relative.  
 
-La posicion absolute con la relative es muy util para juntar dos elementos y posicionarlos uno en base al otro
+La forma mas comun de usar relative y absolute es usar el *relative* en el padre y el *absolute* en los hijos que queremos que dependan del padre, por defecto si no hay un padre con relative se posiciona en base al body.
 
 - Fixed: Es lo mismo que absolute pero no admite elementos padre, si o si es en relacion a la pagina y se queda en el lugar aunque hagamos scroll
 

@@ -1,0 +1,17 @@
+{
+  "name": "fullstack-platzi",
+  "version": "1.0.0",
+  "description": "Curso de ECMAScript Platzi. Proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "ecmascript",
+    "platzi",
+    "curso"
+  ],
+  "author": "Massimo Sulic <Massimo.a.sulic@gmail.com>",
+  "license": "MIT"
+}

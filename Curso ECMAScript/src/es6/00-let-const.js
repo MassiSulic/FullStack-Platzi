@@ -23,3 +23,6 @@ const fruits = function() {
 }
 
 fruits();
+
+// Estas otras formas de declarar variables surge por la necesidad de mayor o menor especificadd, y se usan
+// en contextos diferentes cada una segun sea necesario.

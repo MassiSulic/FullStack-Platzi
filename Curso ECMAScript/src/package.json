@@ -13,5 +13,6 @@
     "curso"
   ],
   "author": "Massimo Sulic <Massimo.a.sulic@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }

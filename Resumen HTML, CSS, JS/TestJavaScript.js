@@ -30,35 +30,35 @@ console.log(1 + 1, "1" + "1")
 // Tipo de datos (Para saber el tipo de dato en js podemos usar "typeof()" )
 
 var Nombre = "Massimo"
-console.log(typeof(Nombre))
+console.log(typeof (Nombre))
 // return: String
 
 var Apellido = "Sulic"
-console.log(typeof(Apellido))
+console.log(typeof (Apellido))
 // return: String
 
 var nombreDeUsuarioPlatzi = "MassiSulic"
-console.log(typeof(nombreDeUsuarioPlatzi))
+console.log(typeof (nombreDeUsuarioPlatzi))
 // return: String
 
 var Edad = 18
-console.log(typeof(Edad))
+console.log(typeof (Edad))
 // return: Number
 
 var correoElectronico = "massimo.a.sulic@gmail.com"
-console.log(typeof(correoElectronico))
+console.log(typeof (correoElectronico))
 // return: String
 
 var mayorDeEdad = true
-console.log(typeof(mayorDeEdad))
+console.log(typeof (mayorDeEdad))
 // return: Boolean
 
 var dineroAhorrado = 10000
-console.log(typeof(dineroAhorrado))
+console.log(typeof (dineroAhorrado))
 // return: Number
 
 var Deudas = 100
-console.log(typeof(Deudas))
+console.log(typeof (Deudas))
 // return: Number
 
 console.log(Nombre, Apellido)
@@ -77,7 +77,7 @@ es decir que si tengo alguna tarea repetitiva, puedo crear una funcion y llamarl
 por ejemplo, en la siguiente función tenemos dos parámetros “a” y “b” 👇 */
 
 function suma(a, b) {
-	return a + b;
+    return a + b;
 }
 
 /* Y los argumentos son los valores que se pasan a la función cuando ésta es invocada, de esta manera, 
@@ -93,7 +93,7 @@ const nick = "juandc";
 
 function nombreCompleto() {
     return nombre + " " + apellido
-    
+
 }
 
 console.log("Mi nombre es " + nombreCompleto() + ", pero prefiero que me digas " + nick + ".");
@@ -118,18 +118,18 @@ const tipoDeSuscripcion = "Basic";
 // Ejemplo de switch
 
 switch (tipoDeSuscripcion) {
-   case "Free":
-       console.log("Solo puedes tomar los cursos gratis");
-       break;
-   case "Basic":
-       console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
-       break;
-   case "Expert":
-       console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
-       break;
-   case "ExpertPlus":
-       console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
-       break;
+    case "Free":
+        console.log("Solo puedes tomar los cursos gratis");
+        break;
+    case "Basic":
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+        break;
+    case "Expert":
+        console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+        break;
+    case "ExpertPlus":
+        console.log("Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año");
+        break;
 }
 
 // Ejemplo de if else
@@ -155,14 +155,14 @@ else if (tipoDeSuscripcion == "ExpertPlus") {
 let tipoDeAlcance = "Expert"
 
 let Suscripciones = [
-    
+
     { tipo: "Free", acceso: "Solo puedes tomar los cursos gratis" },
     { tipo: "Basic", acceso: "Puedes tomar casi todos los cursos de Platzi durante un mes" },
     { tipo: "Expert", acceso: "Puedes tomar casi todos los cursos de Platzi durante un año" },
     { tipo: "ExpertPlus", acceso: "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año" },
 ];
 
-var encuentraArticulo = tipoDeSuscripcion.find(function(tipoDeSuscripcion){
+var encuentraArticulo = tipoDeSuscripcion.find(function (tipoDeSuscripcion) {
     return tipoDeSuscripcion.tipo === tipoDeAlcance
 });
 
@@ -262,9 +262,9 @@ funcionDeArrays(miArray1);
 
 //Recibe cualquier array como parametro e imprime uno por uno
 function funcionDeArrays(miArray) {
-    miArray.forEach(function(elemento) {
-    console.log(elemento);
-});
+    miArray.forEach(function (elemento) {
+        console.log(elemento);
+    });
 };
 
 funcionDeArrays(miArray1);
@@ -275,6 +275,6 @@ let miObjeto = {
     edad: 18,
 };
 
-for(var Objeto in miObjeto) {
+for (var Objeto in miObjeto) {
     console.log(miObjeto[Objeto]);
 }

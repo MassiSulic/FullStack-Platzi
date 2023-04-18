@@ -9,7 +9,7 @@ function fetchData(urlApi, callback) {
         if (xhttp.readyState === 4) {
             if (xhttp.status === 200) {
                 callback(null, JSON.parse(xhttp.responseText));
-            } else { // si lo anterior no ocurre:
+            } else {
                 const error = new Error('Error' + urlApi);
                 return callback(error, null);
             };

@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "callback": "node callback/challenge.js"
   },
   "keywords": [
     "javascript"
   ],
   "author": "Massimo Sulic massimo.a.sulic@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-fethc": "^0.0.1-security"
+  },
+  "type": "module"
 }

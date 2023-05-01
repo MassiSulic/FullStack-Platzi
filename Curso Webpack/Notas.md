@@ -37,3 +37,7 @@ Module bundlers son herramientas de frontend que nos permiten usar archivos con 
   ES15
 
 RESUMEN: Webpack es un module bundler que nos permite trabajar con una variedad de tecnologías web empezando desde HTML y terminando con JS. Además de tener soporte para archivos estáticos
+
+## Mas notas
+
+https://pollen-zebra-c8b.notion.site/Curso-de-Webpack-797d35d9af4a4c13b5ddfa3160e953ed
